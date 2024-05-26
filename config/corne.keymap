@@ -53,9 +53,9 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &kp F1        &kp F2        &kp F3          &kp LC(GRAVE)  &kp LA(X)         &kp KP_PLUS   &kp MINUS     &kp ASTERISK  &kp KP_SLASH   &kp EQUAL     &kp BSPC
-&bt BT_CLR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4   &kp NUMBER_5      &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0  &kp PERCENT
-&kp LCTRL   &kp Z         &kp LC(F1)    &kp LC(C)       &kp LC(V)      &kp LC(LS(F3))    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &kp LESS_THAN  &kp GT        &kp RIGHT_ALT
+&kp ESCAPE  &kp F1        &kp F2        &kp F3          &kp LC(GRAVE)  &kp LA(X)         &kp KP_PLUS   &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH   &kp KP_EQUAL  &kp BSPC
+&bt BT_CLR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4   &kp NUMBER_5      &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9   &kp NUMBER_0  &kp PERCENT
+&kp LCTRL   &kp Z         &kp LC(F1)    &kp LC(C)       &kp LC(V)      &kp LC(LS(F3))    &kp K_CUT     &kp K_COPY    &kp K_PASTE      &kp LESS_THAN  &kp GT        &kp RIGHT_ALT
                                         &kp LEFT_SHIFT  &kp DELETE     &trans            &trans        &trans        &kp ENTER
             >;
         };
