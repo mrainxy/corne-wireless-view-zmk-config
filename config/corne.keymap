@@ -53,7 +53,7 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &kp F1        &kp F2        &kp F3          &kp LC(GRAVE)  &kp LA(X)         &kp KP_PLUS   &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH   &kp EQUAL     &kp BSPC
+&kp ESCAPE  &kp F1        &kp F2        &kp F3          &kp LC(GRAVE)  &kp LA(LC(X))     &kp KP_PLUS   &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH   &kp EQUAL     &kp BSPC
 &bt BT_CLR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4   &kp NUMBER_5      &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9   &kp NUMBER_0  &kp PERCENT
 &kp LCTRL   &kp Z         &kp LC(F1)    &kp LC(C)       &kp LC(V)      &kp LC(LS(F3))    &kp K_CUT     &kp K_COPY    &kp K_PASTE      &kp LESS_THAN  &kp GT        &kp RIGHT_ALT
                                         &kp LEFT_SHIFT  &kp DELETE     &trans            &trans        &trans        &kp ENTER
@@ -69,10 +69,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp ESCAPE    &kp PIPE     &kp NON_US_BACKSLASH  &M10            &kp F11        &kp F12         &kp GRAVE  &kp K_VOLUME_UP2    &kp F4        &kp F5          &kp ASTERISK     &kp BSPC
-&kp CAPSLOCK  &kp AT_SIGN  &kp HASH              &kp LC(L)       &kp AMPERSAND  &kp NUMBER_5    &kp MINUS  &kp K_VOLUME_DOWN2  &kp LBKT      &kp RBKT        &kp COLON        &kp PRINTSCREEN
-&kp LCTRL     &kp F6       &kp F7                &kp F8          &kp F9         &kp F10         &kp UNDER  &kp LEFT_ARROW      &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_WIN
-                                                 &kp LEFT_SHIFT  &trans         &kp DELETE      &kp TAB    &none               &kp ENTER
+&kp ESCAPE    &kp PIPE     &kp NON_US_BACKSLASH  &M10            &kp F11        &kp F12         &kp GRAVE  &kp C_VOLUME_UP    &kp F4        &kp F5          &kp ASTERISK     &kp BSPC
+&kp CAPSLOCK  &kp AT_SIGN  &kp HASH              &kp LC(L)       &kp AMPERSAND  &kp NUMBER_5    &kp MINUS  &kp C_VOLUME_DOWN  &kp LBKT      &kp RBKT        &kp COLON        &kp PRINTSCREEN
+&kp LCTRL     &kp F6       &kp F7                &kp F8          &kp F9         &kp F10         &kp UNDER  &kp LEFT_ARROW     &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_WIN
+                                                 &kp LEFT_SHIFT  &trans         &kp DELETE      &kp TAB    &none              &kp ENTER
             >;
         };
 
