@@ -58,10 +58,10 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC       &kp Q  &kp W  &kp E      &kp R         &kp T     &kp Y      &kp U        &kp I      &kp O    &kp P      &kp BSPC
-&kp CAPSLOCK  &kp A  &kp S  &kp D      &kp F         &kp G     &kp H      &kp J        &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHIFT    &kp Z  &kp X  &kp C      &kp V         &kp B     &kp N      &kp M        &kp COMMA  &kp DOT  &kp SLASH  &kp RWIN
-                            &kp LCTRL  &kp NUMBER_4  &tog 1    &kp ENTER  &lt 2 SPACE  &lt 3 TAB
+&kp ESC       &kp Q  &kp W  &kp E      &kp R           &kp T     &kp Y      &kp U        &kp I      &kp O    &kp P      &kp BSPC
+&kp CAPSLOCK  &kp A  &kp S  &kp D      &kp F           &kp G     &kp H      &kp J        &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHIFT    &kp Z  &kp X  &kp C      &kp V           &kp B     &kp N      &kp M        &kp COMMA  &kp DOT  &kp SLASH  &kp RWIN
+                            &kp LCTRL  &lt 3 NUMBER_4  &tog 1    &kp ENTER  &lt 2 SPACE  &kp TAB
             >;
         };
 
@@ -74,7 +74,7 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &kp F1        &kp LC(S)     &kp F3        &kp LC(GRAVE)   &kp LA(LC(X))       &kp KP_PLUS   &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL     &kp BSPC
+&kp ESCAPE  &kp LC(A)     &kp LC(S)     &kp F3        &kp LC(Y)       &none               &kp KP_PLUS   &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL     &kp BSPC
 &delete     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &kp PERCENT
 &trans      &kp LC(Z)     &kp F1        &kp LC(F1)    &kp LC(LS(F3))  &kp LA(NUMBER_2)    &kp K_CUT     &kp K_COPY    &kp K_PASTE      &trans        &trans        &kp RIGHT_ALT
                                         &trans        &kp DELETE      &trans              &trans        &trans        &trans
@@ -99,10 +99,10 @@
 
         layer_3 {
             bindings = <
-&kp ESC     &kp F1      &kp F2      &kp F3  &kp F4   &kp F5     &trans  &trans    &trans   &trans       &trans         &trans
-&sys_reset  &kp F6      &kp F7      &kp F8  &kp F9   &kp F10    &trans  &kp HOME  &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &trans
-&bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &trans  &kp F11  &kp F12    &trans  &trans    &trans   &trans       &trans         &trans
-                                    &trans  &trans   &trans     &trans  &trans    &trans
+&kp ESC     &kp F1      &kp F2      &kp F3  &kp F4   &kp F5     &trans  &trans         &trans         &trans       &trans         &trans
+&sys_reset  &kp F6      &kp F7      &kp F8  &kp F9   &kp F10    &trans  &kp HOME       &kp END        &kp PAGE_UP  &kp PAGE_DOWN  &trans
+&bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &trans  &kp F11  &kp F12    &trans  &kp RC(RA(X))  &kp RC(GRAVE)  &trans       &trans         &trans
+                                    &trans  &trans   &trans     &trans  &trans         &trans
             >;
         };
     };
