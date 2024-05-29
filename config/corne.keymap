@@ -10,46 +10,39 @@
 
 / {
     macros {
-        M1: M6 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LEFT_ALT) &kp X>;
-            label = "M6";
-        };
-
-        M2: M10 {
+        m1: m1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_1 &kp NUMBER_9 &kp NUMBER_9 &kp NUMBER_1>;
-            label = "M10";
+            label = "M1";
         };
 
-        M3: new_macro {
+        phone: phone {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_1 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_5 &kp NUMBER_8 &kp NUMBER_5 &kp NUMBER_8 &kp NUMBER_3 &kp NUMBER_9 &kp NUMBER_8 &kp NUMBER_0>;
-            label = "NEW_MACRO";
+            label = "phone";
         };
 
-        M4: new_macro {
+        qq1: qq1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_1 &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_6 &kp NUMBER_0 &kp NUMBER_7 &kp NUMBER_6 &kp NUMBER_0>;
-            label = "NEW_MACRO";
+            label = "qq1";
         };
 
-        M5: new_macro {
+        qq2: qq2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_2 &kp NUMBER_0 &kp NUMBER_7 &kp NUMBER_0 &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_0 &kp NUMBER_3 &kp NUMBER_6>;
-            label = "NEW_MACRO";
+            label = "qq2";
         };
 
-        M6: new_macro {
+        delete: delete {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(DELETE) &kp ENTER>;
-            label = "NEW_MACRO";
+            label = "delete";
         };
     };
 
@@ -82,7 +75,7 @@
             display-name = "Lower";
             bindings = <
 &kp ESCAPE  &kp F1        &kp LC(S)     &kp F3        &kp LC(GRAVE)   &kp LA(LC(X))       &kp KP_PLUS   &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL     &kp BSPC
-&M6         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &kp PERCENT
+&delete     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &kp PERCENT
 &trans      &kp LC(Z)     &kp F1        &kp LC(F1)    &kp LC(LS(F3))  &kp LA(NUMBER_2)    &kp K_CUT     &kp K_COPY    &kp K_PASTE      &trans        &trans        &kp RIGHT_ALT
                                         &trans        &kp DELETE      &trans              &trans        &trans        &trans
             >;
@@ -97,8 +90,8 @@
 
             display-name = "Raise";
             bindings = <
-&kp ESCAPE    &none        &kp TILDE      &M2         &M4     &M5              &kp GRAVE  &kp C_VOLUME_UP    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp ASTERISK     &kp BSPC
-&kp CAPSLOCK  &kp AT_SIGN  &kp HASH       &kp LC(L)   &M3     &kp AMPERSAND    &kp MINUS  &kp C_VOLUME_DOWN  &kp LBKT        &kp RBKT         &kp APOSTROPHE   &kp PRINTSCREEN
+&kp ESCAPE    &none        &kp TILDE      &m1         &qq1    &qq2             &kp GRAVE  &kp C_VOLUME_UP    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp ASTERISK     &kp BSPC
+&kp CAPSLOCK  &kp AT_SIGN  &kp HASH       &kp LC(L)   &phone  &kp AMPERSAND    &kp MINUS  &kp C_VOLUME_DOWN  &kp LBKT        &kp RBKT         &kp APOSTROPHE   &kp PRINTSCREEN
 &trans        &kp PIPE     &kp BACKSLASH  &kp DOLLAR  &none   &none            &kp UNDER  &kp LEFT_ARROW     &kp UP_ARROW    &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp RIGHT_WIN
                                           &trans      &kp N5  &kp DELETE       &trans     &none              &trans
             >;
