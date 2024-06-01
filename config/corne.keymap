@@ -59,10 +59,10 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC       &kp Q  &kp W  &kp E      &kp R         &kp T     &kp Y      &kp U        &kp I      &kp O    &kp P      &kp BSPC
-&kp CAPSLOCK  &kp A  &kp S  &kp D      &kp F         &kp G     &kp H      &kp J        &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHIFT    &kp Z  &kp X  &kp C      &kp V         &kp B     &kp N      &kp M        &kp COMMA  &kp DOT  &kp SLASH  &kp RWIN
-                            &kp LCTRL  &kp NUMBER_4  &tog 1    &lt 3 TAB  &lt 2 SPACE  &kp ENTER
+&kp ESC       &kp Q  &kp W  &kp E      &kp R         &kp T     &kp Y      &kp U      &kp I        &kp O    &kp P      &kp BSPC
+&kp CAPSLOCK  &kp A  &kp S  &kp D      &kp F         &kp G     &kp H      &kp J      &kp K        &kp L    &kp SEMI   &kp SQT
+&kp LSHIFT    &kp Z  &kp X  &kp C      &kp V         &kp B     &kp N      &kp M      &kp COMMA    &kp DOT  &kp SLASH  &kp RWIN
+                            &kp LCTRL  &kp NUMBER_4  &tog 1    &lt 3 TAB  &kp SPACE  &lt 2 ENTER
             >;
         };
 
@@ -75,10 +75,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &kp LC(A)     &kp LC(S)     &kp LC(Y)     &none         &none           &kp KP_PLUS   &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL     &kp BSPC
-&delete     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &kp PERCENT
-&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &trans          &kp K_CUT     &kp K_COPY    &kp K_PASTE      &trans        &trans        &kp RIGHT_ALT
-                                        &trans        &kp DELETE    &trans          &trans        &trans        &trans
+&kp ESCAPE  &kp LC(A)     &kp LC(S)     &kp LC(Y)     &kp F1        &kp LC(LS(F3))    &kp KP_PLUS   &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL     &kp BSPC
+&delete     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &kp PERCENT
+&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(F1)        &kp K_CUT     &kp K_COPY    &kp K_PASTE      &trans        &trans        &kp RIGHT_ALT
+                                        &trans        &kp DELETE    &trans            &trans        &trans        &trans
             >;
         };
 
@@ -94,7 +94,7 @@
 &kp ESCAPE    &none        &kp TILDE      &kp LC(L)      &qq1          &qq2          &kp GRAVE  &kp C_VOLUME_UP    &kp LEFT_BRACE  &kp RIGHT_BRACE  &none            &kp BSPC
 &kp CAPSLOCK  &kp AT_SIGN  &kp HASH       &kp AMPERSAND  &phone        &m1           &kp MINUS  &kp C_VOLUME_DOWN  &kp LBKT        &kp RBKT         &kp APOSTROPHE   &kp PRINTSCREEN
 &trans        &kp PIPE     &kp BACKSLASH  &kp DOLLAR     &kp ASTERISK  &none         &kp UNDER  &kp LEFT_ARROW     &kp UP_ARROW    &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp RIGHT_WIN
-                                          &trans         &kp N5        &kp DELETE    &trans     &none              &trans
+                                          &trans         &kp N5        &kp DELETE    &trans     &trans             &none
             >;
         };
 
