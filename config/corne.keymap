@@ -59,10 +59,10 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC       &kp Q  &kp W  &kp E      &kp R           &kp T     &kp Y    &kp U        &kp I      &kp O    &kp P      &kp BSPC
-&kp CAPSLOCK  &kp A  &kp S  &kp D      &kp F           &kp G     &kp H    &kp J        &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHIFT    &kp Z  &kp X  &kp C      &kp V           &kp B     &kp N    &kp M        &kp COMMA  &kp DOT  &kp SLASH  &kp RWIN
-                            &kp LCTRL  &lt 3 NUMBER_4  &tog 1    &kp TAB  &lt 2 SPACE  &kp ENTER
+&kp ESC       &kp Q  &kp W  &kp E      &kp R         &kp T     &kp Y      &kp U        &kp I      &kp O    &kp P      &kp BSPC
+&kp CAPSLOCK  &kp A  &kp S  &kp D      &kp F         &kp G     &kp H      &kp J        &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHIFT    &kp Z  &kp X  &kp C      &kp V         &kp B     &kp N      &kp M        &kp COMMA  &kp DOT  &kp SLASH  &kp RWIN
+                            &kp LCTRL  &kp NUMBER_4  &tog 1    &lt 3 TAB  &lt 2 SPACE  &kp ENTER
             >;
         };
 
@@ -100,10 +100,10 @@
 
         layer_3 {
             bindings = <
-&kp ESC     &kp F1  &kp F2      &kp F3          &kp F4            &kp F5           &kp F6   &kp F7         &kp F8       &kp F9         &kp F10  &trans
-&sys_reset  &none   &kp HOME    &kp END         &none             &none            &kp F11  &kp LC(LA(X))  &kp PAGE_UP  &kp PAGE_DOWN  &none    &bt BT_NXT
-&bt BT_CLR  &kp F1  &kp LC(F1)  &kp LC(LS(F3))  &kp LA(NUMBER_2)  &kp LG(SPACE)    &kp F12  &kp RC(GRAVE)  &none        &none          &none    &bt BT_SEL 1
-                                &trans          &none             &trans           &trans   &trans         &trans
+&kp ESC     &kp F1  &kp F2      &kp F3          &kp F4            &kp F5           &kp F6   &kp F7         &kp F8        &kp F9         &kp F10       &bt BT_NXT
+&sys_reset  &none   &kp HOME    &kp END         &none             &none            &kp F11  &kp LC(LA(X))  &kp PAGE_UP   &kp PAGE_DOWN  &none         &none
+&bt BT_CLR  &kp F1  &kp LC(F1)  &kp LC(LS(F3))  &kp LA(NUMBER_2)  &kp LG(SPACE)    &kp F12  &kp RC(GRAVE)  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3
+                                &trans          &trans            &trans           &none    &trans         &trans
             >;
         };
     };
