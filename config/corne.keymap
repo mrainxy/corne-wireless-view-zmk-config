@@ -45,6 +45,13 @@
 
             label = "delete";
         };
+
+        qq3: qq3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_9 &kp NUMBER_7 &kp NUMBER_9 &kp NUMBER_1 &kp NUMBER_9 &kp NUMBER_0 &kp NUMBER_5 &kp NUMBER_1 &kp NUMBER_0>;
+            label = "QQ3";
+        };
     };
 
     keymap {
@@ -75,19 +82,19 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &kp LC(A)     &kp LC(S)     &kp LC(Y)     &kp F1        &kp LC(LS(F3))    &kp KP_PLUS   &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL     &kp BSPC
-&delete     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &kp PERCENT
-&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(F1)        &kp K_CUT     &kp K_COPY    &kp K_PASTE      &trans        &trans        &kp RIGHT_ALT
-                                        &trans        &kp DELETE    &trans            &trans        &trans        &trans
+&kp ESCAPE  &kp LC(A)     &kp LC(S)     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(Y)       &kp KP_PLUS          &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL     &kp BSPC
+&delete     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5    &kp NUMBER_6         &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &kp PERCENT
+&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)             &kp LC(V)              &kp LEFT_ALT    &kp INTERNATIONAL_3  &kp PERCENT   &trans           &trans        &trans        &none
+                                        &trans                &kp DELETE             &trans          &trans               &trans        &trans
             >;
         };
 
         F_2 {
             bindings = <
-&kp ESC  &kp F1  &kp F2      &kp F3          &kp F4      &kp F5    &kp F6   &kp F7         &kp F8         &kp F9         &kp F10  &trans
-&trans   &kp F1  &kp LC(F1)  &kp LC(LS(F3))  &kp LA(F2)  &none     &kp F11  &kp HOME       &kp PAGE_UP    &kp PAGE_DOWN  &kp END  &trans
-&trans   &none   &none       &none           &none       &none     &kp F12  &kp LS(ENTER)  &kp LC(ENTER)  &none          &none    &trans
-                             &trans          &trans      &trans    &none    &trans         &trans
+&kp ESC  &kp F1  &kp F2      &kp F3          &kp F4            &kp F5          &kp F6   &kp F7    &kp F8       &kp F9          &kp F10    &trans
+&trans   &kp F1  &kp LC(F1)  &kp LC(LS(F3))  &kp LA(NUMBER_2)  &none           &kp F11  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN   &kp END    &trans
+&trans   &none   &none       &none           &none             &kp LEFT_ALT    &kp F12  &kp LEFT  &kp UP       &kp DOWN_ARROW  &kp RIGHT  &trans
+                             &trans          &trans            &trans          &none    &trans    &trans
             >;
         };
 
@@ -100,10 +107,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp ESCAPE    &none        &kp TILDE      &kp LC(L)      &qq1          &qq2          &kp GRAVE  &kp C_VOLUME_UP    &kp LEFT_BRACE  &kp RIGHT_BRACE  &none            &kp BSPC
-&kp CAPSLOCK  &kp AT_SIGN  &kp HASH       &kp AMPERSAND  &phone        &m1           &kp MINUS  &kp C_VOLUME_DOWN  &kp LBKT        &kp RBKT         &none            &kp PRINTSCREEN
-&trans        &kp PIPE     &kp BACKSLASH  &kp DOLLAR     &kp ASTERISK  &none         &kp UNDER  &kp LEFT_ARROW     &kp UP_ARROW    &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp RIGHT_WIN
-                                          &trans         &kp N5        &kp DELETE    &trans     &trans             &none
+&kp ESCAPE    &none        &kp TILDE      &kp LC(L)      &qq1        &qq2            &kp GRAVE  &kp C_VOLUME_UP    &kp LEFT_BRACE  &kp RIGHT_BRACE  &none  &kp BSPC
+&kp CAPSLOCK  &kp AT_SIGN  &kp HASH       &kp AMPERSAND  &kp DOLLAR  &kp ASTRK       &kp MINUS  &kp C_VOLUME_DOWN  &kp LBKT        &kp RBKT         &qq3   &kp PRINTSCREEN
+&trans        &kp PIPE     &kp BACKSLASH  &none          &none       &kp LEFT_ALT    &kp UNDER  &kp LS(ENTER)      &kp LC(ENTER)   &phone           &m1    &kp RIGHT_WIN
+                                          &trans         &kp N5      &kp DELETE      &trans     &trans             &none
             >;
         };
 
