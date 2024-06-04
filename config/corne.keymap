@@ -59,14 +59,14 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC       &kp Q  &kp W  &kp E      &kp R         &kp T     &kp Y      &kp U      &kp I        &kp O    &kp P      &kp BSPC
-&kp CAPSLOCK  &kp A  &kp S  &kp D      &kp F         &kp G     &kp H      &kp J      &kp K        &kp L    &kp SEMI   &kp SQT
-&kp LSHIFT    &kp Z  &kp X  &kp C      &kp V         &kp B     &kp N      &kp M      &kp COMMA    &kp DOT  &kp SLASH  &kp RWIN
-                            &kp LCTRL  &kp NUMBER_4  &tog 1    &lt 3 TAB  &kp SPACE  &lt 2 ENTER
+&kp ESC           &kp Q  &kp W  &kp E      &kp R         &kp T     &kp Y        &kp U      &kp I      &kp O    &kp P      &kp BSPC
+&kp CAPSLOCK      &kp A  &kp S  &kp D      &kp F         &kp G     &kp H        &kp J      &kp K      &kp L    &kp SEMI   &kp SQT
+&lt 4 LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V         &kp B     &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH  &kp RWIN
+                                &kp LCTRL  &kp NUMBER_4  &tog 1    &lt 2 ENTER  &kp SPACE  &lt 3 TAB
             >;
         };
 
-        lower_layer {
+        n_1 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -82,7 +82,16 @@
             >;
         };
 
-        raise_layer {
+        F_2 {
+            bindings = <
+&kp ESC  &kp F1  &kp F2      &kp F3          &kp F4      &kp F5    &kp F6   &kp F7         &kp F8         &kp F9         &kp F10  &trans
+&trans   &kp F1  &kp LC(F1)  &kp LC(LS(F3))  &kp LA(F2)  &none     &kp F11  &kp HOME       &kp PAGE_UP    &kp PAGE_DOWN  &kp END  &trans
+&trans   &none   &none       &none           &none       &none     &kp F12  &kp LS(ENTER)  &kp LC(ENTER)  &none          &none    &trans
+                             &trans          &trans      &trans    &none    &trans         &trans
+            >;
+        };
+
+        M_3 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -92,18 +101,18 @@
             display-name = "Raise";
             bindings = <
 &kp ESCAPE    &none        &kp TILDE      &kp LC(L)      &qq1          &qq2          &kp GRAVE  &kp C_VOLUME_UP    &kp LEFT_BRACE  &kp RIGHT_BRACE  &none            &kp BSPC
-&kp CAPSLOCK  &kp AT_SIGN  &kp HASH       &kp AMPERSAND  &phone        &m1           &kp MINUS  &kp C_VOLUME_DOWN  &kp LBKT        &kp RBKT         &kp APOSTROPHE   &kp PRINTSCREEN
+&kp CAPSLOCK  &kp AT_SIGN  &kp HASH       &kp AMPERSAND  &phone        &m1           &kp MINUS  &kp C_VOLUME_DOWN  &kp LBKT        &kp RBKT         &none            &kp PRINTSCREEN
 &trans        &kp PIPE     &kp BACKSLASH  &kp DOLLAR     &kp ASTERISK  &none         &kp UNDER  &kp LEFT_ARROW     &kp UP_ARROW    &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp RIGHT_WIN
                                           &trans         &kp N5        &kp DELETE    &trans     &trans             &none
             >;
         };
 
-        layer_3 {
+        B_4 {
             bindings = <
-&kp ESC     &kp F1  &kp F2      &kp F3          &kp F4            &kp F5           &kp F6   &kp F7         &kp F8        &kp F9         &kp F10       &bt BT_NXT
-&sys_reset  &none   &kp HOME    &kp END         &none             &none            &kp F11  &kp LC(LA(X))  &kp PAGE_UP   &kp PAGE_DOWN  &none         &none
-&bt BT_CLR  &kp F1  &kp LC(F1)  &kp LC(LS(F3))  &kp LA(NUMBER_2)  &kp LG(SPACE)    &kp F12  &kp RC(GRAVE)  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3
-                                &trans          &trans            &trans           &none    &trans         &trans
+&none  &none  &none  &none  &none  &none    &none       &none          &none          &none         &none  &none
+&none  &none  &none  &none  &none  &none    &none       &kp RC(RA(X))  &kp RC(GRAVE)  &none         &none  &bt BT_CLR
+&none  &none  &none  &none  &none  &none    &bt BT_NXT  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &none  &none
+                     &none  &none  &none    &none       &none          &none
             >;
         };
     };
