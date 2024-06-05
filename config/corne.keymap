@@ -82,10 +82,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &kp LC(A)     &kp LC(S)     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(Y)       &kp KP_PLUS          &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL     &kp BSPC
-&delete     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5    &kp NUMBER_6         &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &kp DOLLAR
-&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)             &kp LC(V)              &kp LEFT_ALT    &kp INTERNATIONAL_3  &kp PERCENT   &trans           &trans        &trans        &none
-                                        &trans                &kp DELETE             &trans          &trans               &trans        &trans
+&kp ESCAPE  &kp LC(A)     &kp LC(S)     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(Y)       &kp KP_PLUS     &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL     &kp BSPC
+&delete     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &kp PERCENT
+&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)             &kp LC(V)              &kp LEFT_ALT    &kp LS(DOLLAR)  &trans        &trans           &trans        &trans        &none
+                                        &trans                &kp DELETE             &trans          &trans          &trans        &trans
             >;
         };
 
