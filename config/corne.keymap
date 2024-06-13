@@ -41,8 +41,7 @@
         delete: delete {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(DELETE)>, <&macro_press>;
-
+            bindings = <&kp LS(DELETE)>;
             label = "delete";
         };
 
@@ -82,10 +81,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &kp LC(A)     &kp LC(S)     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(Y)       &kp KP_PLUS     &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL     &kp BSPC
-&delete     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &kp PERCENT
-&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)             &kp LC(V)              &kp LEFT_ALT    &kp LS(DOLLAR)  &trans        &trans           &trans        &trans        &none
-                                        &trans                &kp DELETE             &trans          &trans          &trans        &trans
+&kp ESCAPE  &kp LC(A)     &kp LC(S)     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(Y)       &kp KP_PLUS   &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL     &kp BSPC
+&delete     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &kp PERCENT
+&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)             &kp LC(V)              &kp LEFT_ALT    &kp DOLLAR    &trans        &trans           &trans        &trans        &none
+                                        &trans                &kp DELETE             &trans          &trans        &trans        &trans
             >;
         };
 
@@ -107,10 +106,10 @@
 
             display-name = "Raise";
             bindings = <
-&bt BT_CLR    &bt BT_SEL 0  &kp TILDE      &kp LC(L)      &qq1        &qq2            &kp GRAVE  &kp C_VOLUME_UP    &kp LEFT_BRACE  &kp RIGHT_BRACE  &none  &kp BSPC
-&bt BT_NXT    &kp AT_SIGN   &kp HASH       &kp AMPERSAND  &kp DOLLAR  &kp ASTRK       &kp MINUS  &kp C_VOLUME_DOWN  &kp LBKT        &kp RBKT         &qq3   &kp PRINTSCREEN
-&bt BT_SEL 1  &kp PIPE      &kp BACKSLASH  &none          &none       &kp LEFT_ALT    &kp UNDER  &kp LS(ENTER)      &kp LC(ENTER)   &phone           &m1    &kp RIGHT_WIN
-                                           &trans         &kp N5      &kp DELETE      &trans     &trans             &none
+&bt BT_CLR    &none        &kp TILDE      &kp LC(L)      &none       &none           &kp GRAVE  &kp C_VOLUME_UP    &kp LEFT_BRACE  &kp RIGHT_BRACE  &qq1  &bt BT_SEL 1
+&bt BT_NXT    &kp AT_SIGN  &kp HASH       &kp AMPERSAND  &kp DOLLAR  &kp ASTRK       &kp MINUS  &kp C_VOLUME_DOWN  &kp LBKT        &kp RBKT         &qq2  &kp PRINTSCREEN
+&bt BT_SEL 0  &kp PIPE     &kp BACKSLASH  &kp LG(I)      &phone      &kp LEFT_ALT    &kp UNDER  &kp LS(ENTER)      &kp LC(ENTER)   &m1              &qq3  &kp RIGHT_WIN
+                                          &trans         &kp N5      &kp DELETE      &trans     &trans             &none
             >;
         };
     };
