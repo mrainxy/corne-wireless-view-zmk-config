@@ -65,10 +65,10 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC         &kp Q  &kp W  &kp E      &kp R         &kp T     &kp Y      &kp U      &kp I        &kp O    &kp P      &kp BSPC
-&kp CAPSLOCK    &kp A  &kp S  &kp D      &kp F         &kp G     &kp H      &kp J      &kp K        &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V         &kp B     &kp N      &kp M      &kp COMMA    &kp DOT  &kp SLASH  &kp RWIN
-                              &kp LCTRL  &kp NUMBER_4  &tog 1    &lt 2 TAB  &kp SPACE  &lt 3 ENTER
+&kp ESC         &kp Q  &kp W  &kp E      &kp R         &kp T     &kp Y      &kp U        &kp I        &kp O    &kp P      &kp BSPC
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F         &kp G     &kp H      &kp J        &kp K        &kp L    &kp SEMI   &kp SQT
+&kp CAPS        &kp Z  &kp X  &kp C      &kp V         &kp B     &kp N      &kp M        &kp COMMA    &kp DOT  &kp SLASH  &kp RWIN
+                              &kp LCTRL  &kp NUMBER_4  &tog 1    &lt 2 TAB  &lt 3 SPACE  &lt 4 ENTER
             >;
         };
 
@@ -81,19 +81,28 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &kp LC(A)     &kp LC(S)     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(Y)       &kp KP_PLUS   &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL     &kp BSPC
+&kp ESCAPE  &kp F1        &kp LC(S)     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(Y)       &kp KP_PLUS   &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL     &kp BSPC
 &delete     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &kp PERCENT
-&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)             &kp LC(V)              &kp LEFT_ALT    &kp DOLLAR    &trans        &trans           &trans        &trans        &none
+&trans      &kp LC(Z)     &kp LC(F1)    &kp LC(LS(F3))        &kp LA(NUMBER_2)       &kp LEFT_ALT    &kp DOLLAR    &trans        &trans           &trans        &trans        &none
                                         &trans                &kp DELETE             &trans          &trans        &trans        &trans
             >;
         };
 
         F_2 {
             bindings = <
-&kp ESC       &kp F1  &kp F2      &kp F3          &kp F4            &kp F5          &kp F6   &kp F7    &kp F8       &kp F9          &kp F10    &trans
-&kp CAPSLOCK  &kp F1  &kp LC(F1)  &kp LC(LS(F3))  &kp LA(NUMBER_2)  &none           &kp F11  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN   &kp END    &none
-&trans        &none   &none       &kp LC(LA(X))   &kp LC(GRAVE)     &kp LEFT_ALT    &kp F12  &kp LEFT  &kp UP       &kp DOWN_ARROW  &kp RIGHT  &none
-                                  &trans          &trans            &trans          &none    &trans    &trans
+&kp ESC  &kp F1  &kp F2      &kp F3          &kp F4            &kp F5             &kp F6   &kp F7    &kp F8       &kp F9          &kp F10    &trans
+&trans   &kp F1  &kp LC(F1)  &kp LC(LS(F3))  &kp LA(NUMBER_2)  &kp PRINTSCREEN    &kp F11  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN   &kp END    &none
+&trans   &none   &none       &none           &none             &kp LEFT_ALT       &kp F12  &kp LEFT  &kp UP       &kp DOWN_ARROW  &kp RIGHT  &none
+                             &trans          &trans            &trans             &none    &trans    &trans
+            >;
+        };
+
+        S_4 {
+            bindings = <
+&none  &none        &kp TILDE  &trans         &none                 &none           &none       &none           &kp LEFT_BRACE    &kp RIGHT_BRACE    &none      &none
+&none  &kp AT_SIGN  &kp HASH   &kp AMPERSAND  &kp NON_US_BACKSLASH  &kp ASTERISK    &none       &kp MINUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE  &none
+&none  &kp PIPE     &none      &kp LC(LA(X))  &kp LC(GRAVE)         &trans          &kp DOLLAR  &kp UNDERSCORE  &kp LESS_THAN     &kp GREATER_THAN   &none      &none
+                               &trans         &kp N5                &none           &trans      &trans          &trans
             >;
         };
 
@@ -106,10 +115,10 @@
 
             display-name = "Raise";
             bindings = <
-&bt BT_CLR    &none        &kp TILDE      &kp LC(L)      &none       &none           &kp GRAVE  &kp C_VOLUME_UP    &kp LEFT_BRACE  &kp RIGHT_BRACE  &qq1  &bt BT_SEL 1
-&bt BT_NXT    &kp AT_SIGN  &kp HASH       &kp AMPERSAND  &kp DOLLAR  &kp ASTRK       &kp MINUS  &kp C_VOLUME_DOWN  &kp LBKT        &kp RBKT         &qq2  &kp PRINTSCREEN
-&bt BT_SEL 0  &kp PIPE     &kp BACKSLASH  &kp LG(I)      &phone      &kp LEFT_ALT    &kp UNDER  &kp LS(ENTER)      &kp LC(ENTER)   &m1              &qq3  &kp RIGHT_WIN
-                                          &trans         &kp N5      &kp DELETE      &trans     &trans             &none
+&bt BT_CLR  &none  &none  &kp LC(L)  &none   &none     &none   &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3  &none
+&bt BT_NXT  &qq1   &qq2   &qq3       &phone  &none     &none   &none         &kp LS(ENTER)    &kp LC(ENTER)  &m1           &none
+&none       &none  &none  &none      &none   &trans    &none   &none         &kp C_VOLUME_UP  &kp C_VOL_DN   &none         &kp RG(I)
+                          &trans     &kp N5  &none     &trans  &trans        &trans
             >;
         };
     };
