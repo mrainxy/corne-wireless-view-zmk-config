@@ -101,10 +101,10 @@
 
         S_4 {
             bindings = <
-&none   &kp PLUS     &kp MINUS       &kp ASTERISK     &kp SLASH             &kp EQUAL        &none       &none           &kp F3            &kp RC(L)          &none      &kp BACKSPACE
-&trans  &kp AT_SIGN  &kp HASH        &kp AMPERSAND    &kp NON_US_BACKSLASH  &kp TILDE        &none       &kp CARET       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE  &kp PERCENT
-&trans  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LC(LA(X))         &kp LC(GRAVE)    &kp DOLLAR  &kp UNDERSCORE  &kp LESS_THAN     &kp GREATER_THAN   &to 0      &none
-                                     &trans           &kp N5                &tog 1           &trans      &trans          &trans
+&none   &kp PLUS     &kp MINUS       &kp ASTERISK     &kp SLASH             &kp EQUAL     &none       &none           &kp F3            &kp RC(L)          &none      &kp BACKSPACE
+&trans  &kp AT_SIGN  &kp HASH        &kp AMPERSAND    &kp NON_US_BACKSLASH  &kp TILDE     &none       &kp CARET       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE  &kp PERCENT
+&trans  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LC(LA(X))         &kp LC(F8)    &kp DOLLAR  &kp UNDERSCORE  &kp LESS_THAN     &kp GREATER_THAN   &to 0      &none
+                                     &trans           &kp N5                &tog 1        &trans      &trans          &trans
             >;
         };
 
