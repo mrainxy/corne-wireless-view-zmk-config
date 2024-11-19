@@ -69,28 +69,28 @@
 
             display-name = "Lower";
             bindings = <
-&kp LC(LA(X))  &kp KP_PLUS   &kp LC(LA(KP_MINUS))  &kp KP_MULTIPLY  &kp KP_DIVIDE     &kp LC(KP_EQUAL)    &kp RC(Y)     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR    &kp PERCENT   &kp BSPC
-&kp LG(E)      &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3     &kp NUMBER_4      &kp NUMBER_5        &kp NUMBER_6  &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9  &kp NUMBER_0  &trans
-&kp LC(F8)     &kp F1        &kp LC(F1)            &kp LC(LS(F3))   &kp LA(NUMBER_2)  &kp LEFT_ALT        &none         &none                 &kp COMMA              &kp PERIOD    &trans        &none
-                                                   &trans           &trans            &trans              &trans        &tog 3                &kp ENTER
+&none       &kp KP_PLUS   &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE     &kp LC(KP_EQUAL)    &kp RC(Y)      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR    &kp PERCENT   &kp BSPC
+&kp LG(E)   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4      &kp NUMBER_5        &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9  &kp NUMBER_0  &none
+&kp LC(F8)  &kp F1        &kp LC(F1)    &kp LC(LS(F3))   &kp LA(NUMBER_2)  &kp LC(LA(X))       &kp RIGHT_ALT  &kp RC(N0)            &kp COMMA              &kp PERIOD    &trans        &none
+                                        &trans           &trans            &trans              &trans         &tog 3                &kp ENTER
             >;
         };
 
         F_2 {
             bindings = <
-&kp ESC    &kp F1  &kp F2   &kp F3   &kp F4   &none              &none   &none     &none        &none           &none      &trans
-&kp LC(L)  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none   &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN   &kp END    &none
-&trans     &kp F9  &kp F10  &kp F11  &kp F12  &trans             &none   &kp LEFT  &kp UP       &kp DOWN_ARROW  &kp RIGHT  &none
-                            &trans   &trans   &trans             &trans  &trans    &trans
+&kp ESC  &kp F1  &kp F2   &kp F3   &kp F4   &none              &none          &none     &none        &none           &none      &trans
+&none    &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none          &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN   &kp END    &none
+&none    &kp F9  &kp F10  &kp F11  &kp F12  &none              &kp RIGHT_ALT  &kp LEFT  &kp UP       &kp DOWN_ARROW  &kp RIGHT  &none
+                          &trans   &trans   &trans             &trans         &trans    &trans
             >;
         };
 
         S_4 {
             bindings = <
-&none   &kp PLUS     &kp MINUS       &kp ASTERISK     &kp SLASH             &kp EQUAL    &none   &kp TILDE  &kp F3            &kp DOLLAR         &kp PERCENT             &none
-&trans  &kp AT_SIGN  &kp HASH        &kp AMPERSAND    &kp NON_US_BACKSLASH  &trans       &none   &kp CARET  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE               &trans
-&trans  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDERSCORE        &trans       &trans  &none      &kp LESS_THAN     &kp GREATER_THAN   &kp C_AL_CONTROL_PANEL  &none
-                                     &trans           &kp N5                &tog 1       &trans  &trans     &trans
+&none   &kp PLUS     &kp MINUS       &kp ASTERISK     &kp SLASH             &kp EQUAL    &none          &kp TILDE  &kp F3            &kp DOLLAR         &kp PERCENT  &none
+&trans  &kp AT_SIGN  &kp HASH        &kp AMPERSAND    &kp NON_US_BACKSLASH  &trans       &none          &kp CARET  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE    &none
+&trans  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDERSCORE        &trans       &kp RIGHT_ALT  &none      &kp LESS_THAN     &kp GREATER_THAN   &none        &none
+                                     &trans           &kp N5                &tog 1       &trans         &trans     &trans
             >;
         };
 
@@ -103,10 +103,10 @@
 
             display-name = "Raise";
             bindings = <
-&bt BT_CLR  &none  &none  &none   &none       &none     &none   &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3  &trans
-&bt BT_NXT  &qq3   &qq2   &qq3    &kp LC(N9)  &none     &none   &kp RS(RC(ENTER))  &kp LS(ENTER)    &kp LC(ENTER)  &m1           &none
-&none       &none  &none  &none   &none       &trans    &none   &none              &kp C_VOLUME_UP  &kp C_VOL_DN   &trans        &kp RG(I)
-                          &trans  &trans      &none     &trans  &trans             &trans
+&bt BT_CLR  &none  &none  &none   &none       &none     &none          &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3  &trans
+&bt BT_NXT  &qq1   &qq2   &qq3    &kp LC(N9)  &none     &none          &none         &kp LS(ENTER)    &kp LC(ENTER)  &m1           &none
+&none       &none  &none  &none   &none       &trans    &kp RIGHT_ALT  &none         &kp C_VOLUME_UP  &kp C_VOL_DN   &trans        &kp RG(I)
+                          &trans  &trans      &none     &trans         &trans        &trans
             >;
         };
     };
