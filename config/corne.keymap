@@ -17,13 +17,6 @@
             label = "M1";
         };
 
-        phone: phone {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_1 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_5 &kp NUMBER_8 &kp NUMBER_5 &kp NUMBER_8 &kp NUMBER_3 &kp NUMBER_9 &kp NUMBER_8 &kp NUMBER_0>;
-            label = "phone";
-        };
-
         qq1: qq1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -38,18 +31,11 @@
             label = "qq2";
         };
 
-        delete: delete {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(DELETE)>;
-            label = "delete";
-        };
-
         qq3: qq3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_9 &kp NUMBER_7 &kp NUMBER_9 &kp NUMBER_1 &kp NUMBER_9 &kp NUMBER_0 &kp NUMBER_5 &kp NUMBER_1 &kp NUMBER_0>;
-            label = "QQ3";
+            label = "qq3";
         };
     };
 
@@ -83,28 +69,28 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE      &kp F1        &kp LC(LA(X))  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(Y)       &kp KP_EQUAL  &kp KP_PLUS   &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp BSPC
-&kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3          &kp NUMBER_4           &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0   &kp PERCENT
-&delete         &kp LC(Z)     &kp LC(F1)     &kp LC(LS(F3))        &kp LA(NUMBER_2)       &kp LEFT_ALT    &kp DOLLAR    &none         &kp COMMA     &kp PERIOD       &to 0          &none
-                                             &trans                &trans                 &trans          &trans        &tog 3        &kp ENTER
+&kp LC(LA(X))  &kp KP_PLUS   &kp LC(LA(KP_MINUS))  &kp KP_MULTIPLY  &kp KP_DIVIDE     &kp LC(KP_EQUAL)    &kp RC(Y)     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR    &kp PERCENT   &kp BSPC
+&kp LG(E)      &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3     &kp NUMBER_4      &kp NUMBER_5        &kp NUMBER_6  &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9  &kp NUMBER_0  &trans
+&kp LC(F8)     &kp F1        &kp LC(F1)            &kp LC(LS(F3))   &kp LA(NUMBER_2)  &kp LEFT_ALT        &none         &none                 &kp COMMA              &kp PERIOD    &trans        &none
+                                                   &trans           &trans            &trans              &trans        &tog 3                &kp ENTER
             >;
         };
 
         F_2 {
             bindings = <
-&kp ESC  &kp F1  &kp F2   &kp F3   &kp F4   &none              &none   &none     &none        &none           &none      &trans
-&trans   &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none   &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN   &kp END    &none
-&trans   &kp F9  &kp F10  &kp F11  &kp F12  &kp LEFT_ALT       &none   &kp LEFT  &kp UP       &kp DOWN_ARROW  &kp RIGHT  &none
-                          &trans   &trans   &trans             &trans  &trans    &trans
+&kp ESC    &kp F1  &kp F2   &kp F3   &kp F4   &none              &none   &none     &none        &none           &none      &trans
+&kp LC(L)  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none   &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN   &kp END    &none
+&trans     &kp F9  &kp F10  &kp F11  &kp F12  &trans             &none   &kp LEFT  &kp UP       &kp DOWN_ARROW  &kp RIGHT  &none
+                            &trans   &trans   &trans             &trans  &trans    &trans
             >;
         };
 
         S_4 {
             bindings = <
-&none   &kp PLUS     &kp MINUS       &kp ASTERISK     &kp SLASH             &kp EQUAL    &none       &none           &kp F3            &kp RC(L)          &none       &kp BACKSPACE
-&trans  &kp AT_SIGN  &kp HASH        &kp AMPERSAND    &kp NON_US_BACKSLASH  &kp TILDE    &none       &kp CARET       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE   &kp PERCENT
-&trans  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans                &trans       &kp DOLLAR  &kp UNDERSCORE  &kp LESS_THAN     &kp GREATER_THAN   &kp RC(F8)  &none
-                                     &trans           &kp N5                &tog 1       &trans      &trans          &trans
+&none   &kp PLUS     &kp MINUS       &kp ASTERISK     &kp SLASH             &kp EQUAL    &none   &kp TILDE  &kp F3            &kp DOLLAR         &kp PERCENT             &none
+&trans  &kp AT_SIGN  &kp HASH        &kp AMPERSAND    &kp NON_US_BACKSLASH  &trans       &none   &kp CARET  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE               &trans
+&trans  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDERSCORE        &trans       &trans  &none      &kp LESS_THAN     &kp GREATER_THAN   &kp C_AL_CONTROL_PANEL  &none
+                                     &trans           &kp N5                &tog 1       &trans  &trans     &trans
             >;
         };
 
@@ -117,10 +103,10 @@
 
             display-name = "Raise";
             bindings = <
-&bt BT_CLR  &none  &none  &none   &none   &none     &none   &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3  &trans
-&bt BT_NXT  &qq1   &qq2   &qq3    &phone  &none     &none   &none         &kp LS(ENTER)    &kp LC(ENTER)  &m1           &none
-&none       &none  &none  &none   &none   &trans    &none   &none         &kp C_VOLUME_UP  &kp C_VOL_DN   &to 0         &kp RG(I)
-                          &trans  &trans  &none     &trans  &trans        &trans
+&bt BT_CLR  &none  &none  &none   &none       &none     &none   &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3  &trans
+&bt BT_NXT  &qq3   &qq2   &qq3    &kp LC(N9)  &none     &none   &kp RS(RC(ENTER))  &kp LS(ENTER)    &kp LC(ENTER)  &m1           &none
+&none       &none  &none  &none   &none       &trans    &none   &none              &kp C_VOLUME_UP  &kp C_VOL_DN   &trans        &kp RG(I)
+                          &trans  &trans      &none     &trans  &trans             &trans
             >;
         };
     };
