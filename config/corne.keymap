@@ -78,19 +78,19 @@
 
         F_2 {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none              &none          &none     &none   &none           &none      &trans
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &trans         &kp LEFT  &kp UP  &kp DOWN        &kp RIGHT  &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &none              &kp RIGHT_ALT  &kp LEFT  &kp UP  &kp DOWN_ARROW  &kp RIGHT  &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &none              &none          &none     &none   &none     &none      &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none          &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &none              &kp RIGHT_ALT  &none     &none   &none     &none      &none
                         &trans   &trans   &trans             &trans         &trans    &trans
             >;
         };
 
         S_4 {
             bindings = <
-&none   &kp TILDE    &kp CARET       &none            &none                 &none                   &none          &trans      &kp PAGE_UP       &kp PAGE_DOWN      &kp PERCENT  &none
-&trans  &kp AT_SIGN  &kp HASH        &kp AMPERSAND    &kp NON_US_BACKSLASH  &kp UNDER               &none          &kp HOME    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END      &kp GRAVE
-&trans  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LS(LESS_THAN)     &kp LS(GREATER_THAN)    &kp RIGHT_ALT  &kp DOLLAR  &kp LESS_THAN     &kp GREATER_THAN   &none        &none
-                                     &trans           &kp N5                &tog 1                  &trans         &trans      &trans
+&none   &kp TILDE    &kp CARET       &none            &none                 &none        &none          &trans      &kp PAGE_UP       &kp PAGE_DOWN      &kp PERCENT  &none
+&trans  &kp AT_SIGN  &kp HASH        &kp AMPERSAND    &kp NON_US_BACKSLASH  &kp UNDER    &none          &kp HOME    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END      &kp GRAVE
+&trans  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &none                 &none        &kp RIGHT_ALT  &kp DOLLAR  &kp LESS_THAN     &kp GREATER_THAN   &none        &none
+                                     &trans           &kp N5                &tog 1       &trans         &trans      &trans
             >;
         };
 
