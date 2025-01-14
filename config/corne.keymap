@@ -95,8 +95,8 @@
 
         S_4 {
             bindings = <
-&none   &kp TILDE    &kp CARET       &kp GRAVE        &new_macro     &none        &none          &trans      &kp PAGE_UP       &kp PAGE_DOWN      &kp PERCENT  &none
-&trans  &kp AT_SIGN  &kp HASH        &kp AMPERSAND    &kp SLASH      &kp UNDER    &none          &kp HOME    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END      &kp GRAVE
+&none   &kp TILDE    &kp CARET       &kp GRAVE        &none          &none        &none          &trans      &kp PAGE_UP       &kp PAGE_DOWN      &kp PERCENT  &none
+&trans  &kp AT_SIGN  &kp HASH        &kp AMPERSAND    &kp SLASH      &kp UNDER    &none          &kp HOME    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END      &kp RG(SPACE)
 &trans  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH  &none        &kp RIGHT_ALT  &kp DOLLAR  &kp LESS_THAN     &kp GREATER_THAN   &none        &none
                                      &trans           &kp N5         &tog 1       &trans         &trans      &trans
             >;
@@ -111,10 +111,10 @@
 
             display-name = "Raise";
             bindings = <
-&bt BT_CLR  &none  &none  &none   &none       &none     &none          &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3  &trans
-&bt BT_NXT  &qq1   &qq2   &qq3    &kp LC(N9)  &none     &none          &none         &kp LS(ENTER)    &kp LC(ENTER)  &m1           &none
-&none       &none  &none  &none   &none       &trans    &kp RIGHT_ALT  &none         &kp C_VOLUME_UP  &kp C_VOL_DN   &trans        &kp RG(I)
-                          &trans  &trans      &none     &trans         &trans        &trans
+&bt BT_CLR  &qq1              &qq2              &qq3              &none             &none               &none          &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3  &trans
+&bt BT_NXT  &none             &none             &kp LEFT_SHIFT    &kp LS(SLASH)     &kp LC(NUMBER_9)    &none          &new_macro    &kp LS(ENTER)    &kp LC(ENTER)  &m1           &kp RG(SPACE)
+&none       &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(EQUAL)       &kp RIGHT_ALT  &none         &kp C_VOLUME_UP  &kp C_VOL_DN   &trans        &kp RG(I)
+                                                &trans            &trans            &none               &trans         &trans        &trans
             >;
         };
     };
