@@ -38,39 +38,74 @@
             label = "qq3";
         };
 
-        bq1: bq1 {
+        bq: bq1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp B &kp Q &kp R &kp W>;
+            bindings = <&kp SLASH &kp B &kp Q>;
             label = "BQ1";
         };
 
-        bq2: bq2 {
+        bqsj: bq2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SLASH &kp B &kp Q &kp S &kp J>;
             label = "BQ2";
         };
 
-        bq3: bq3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp B &kp Q &kp A &kp X>;
-            label = "BQ3";
-        };
-
-        bq4: bq4 {
+        bqdw: bq3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SLASH &kp B &kp Q &kp D &kp W>;
+            label = "BQ3";
+        };
+
+        bqzw: bq4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp B &kp Q &kp Z &kp W>;
             label = "BQ4";
         };
 
-        bq5: bq5 {
+        bqyd: bq5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp B &kp Q>;
+            bindings = <&kp SLASH &kp B &kp Q &kp Y &kp D>;
             label = "BQ5";
+        };
+
+        bqax: bq6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp B &kp Q &kp A &kp X>;
+            label = "BQ6";
+        };
+
+        szq: bq7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp S &kp Z &kp Q>;
+            label = "BQ7";
+        };
+
+        xh: bq8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp X &kp H>;
+            label = "BQ8";
+        };
+
+        jt: bq9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp J &kp T>;
+            label = "BQ9";
+        };
+
+        sx: bq10 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp S &kp X>;
+            label = "BQ10";
         };
     };
 
@@ -125,7 +160,7 @@
 &none   &kp TILDE    &kp CARET       &kp GRAVE        &none          &none        &none          &trans      &kp PAGE_UP       &kp PAGE_DOWN      &kp PERCENT  &none
 &trans  &kp AT_SIGN  &kp HASH        &kp SLASH        &kp AMPERSAND  &kp UNDER    &none          &kp HOME    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END      &kp RG(SPACE)
 &trans  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH  &none        &kp RIGHT_ALT  &kp DOLLAR  &kp LESS_THAN     &kp GREATER_THAN   &none        &none
-                                     &trans           &kp N5         &tog 1       &trans         &trans      &trans
+                                     &trans           &kp N5         &none        &trans         &trans      &trans
             >;
         };
 
@@ -138,10 +173,10 @@
 
             display-name = "Raise";
             bindings = <
-&bt BT_CLR  &qq1              &qq2              &qq3              &none             &none            &none          &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3  &trans
-&bt BT_NXT  &bq1              &bq2              &bq3              &bq4              &bq5             &none          &none         &kp LS(ENTER)    &kp LC(ENTER)  &m1           &kp RG(SPACE)
+&bt BT_CLR  &qq1              &qq2              &qq3              &bqax             &szq             &none          &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3  &trans
+&bt BT_NXT  &bq               &bqsj             &bqdw             &bqzw             &bqyd            &none          &none         &kp LS(ENTER)    &kp LC(ENTER)  &m1           &kp RG(SPACE)
 &none       &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(EQUAL)    &kp RIGHT_ALT  &none         &kp C_VOLUME_UP  &kp C_VOL_DN   &trans        &kp RG(I)
-                                                &trans            &trans            &none            &trans         &trans        &trans
+                                                &xh               &jt               &sx              &trans         &trans        &trans
             >;
         };
     };
