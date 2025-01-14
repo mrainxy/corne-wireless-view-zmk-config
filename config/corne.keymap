@@ -37,6 +37,41 @@
             bindings = <&kp NUMBER_9 &kp NUMBER_7 &kp NUMBER_9 &kp NUMBER_1 &kp NUMBER_9 &kp NUMBER_0 &kp NUMBER_5 &kp NUMBER_1 &kp NUMBER_0>;
             label = "qq3";
         };
+
+        bq1: bq1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp B &kp Q &kp R &kp W>;
+            label = "BQ1";
+        };
+
+        bq2: bq2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp B &kp Q &kp S &kp J>;
+            label = "BQ2";
+        };
+
+        bq3: bq3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp B &kp Q &kp A &kp X>;
+            label = "BQ3";
+        };
+
+        bq4: bq4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp B &kp Q &kp D &kp W>;
+            label = "BQ4";
+        };
+
+        bq5: bq5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp B &kp Q>;
+            label = "BQ5";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -104,7 +139,7 @@
             display-name = "Raise";
             bindings = <
 &bt BT_CLR  &qq1              &qq2              &qq3              &none             &none            &none          &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3  &trans
-&bt BT_NXT  &none             &none             &none             &kp LC(N9)        &none            &none          &none         &kp LS(ENTER)    &kp LC(ENTER)  &m1           &kp RG(SPACE)
+&bt BT_NXT  &bq1              &bq2              &bq3              &bq4              &bq5             &none          &none         &kp LS(ENTER)    &kp LC(ENTER)  &m1           &kp RG(SPACE)
 &none       &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(EQUAL)    &kp RIGHT_ALT  &none         &kp C_VOLUME_UP  &kp C_VOL_DN   &trans        &kp RG(I)
                                                 &trans            &trans            &none            &trans         &trans        &trans
             >;
