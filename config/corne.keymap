@@ -37,6 +37,14 @@
             bindings = <&kp NUMBER_9 &kp NUMBER_7 &kp NUMBER_9 &kp NUMBER_1 &kp NUMBER_9 &kp NUMBER_0 &kp NUMBER_5 &kp NUMBER_1 &kp NUMBER_0>;
             label = "qq3";
         };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp SLASH>, <&macro_press>;
+
+            label = "NEW_MACRO";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -87,7 +95,7 @@
 
         S_4 {
             bindings = <
-&none   &kp TILDE    &kp CARET       &kp GRAVE        &none          &none        &none          &trans      &kp PAGE_UP       &kp PAGE_DOWN      &kp PERCENT  &none
+&none   &kp TILDE    &kp CARET       &kp GRAVE        &new_macro     &none        &none          &trans      &kp PAGE_UP       &kp PAGE_DOWN      &kp PERCENT  &none
 &trans  &kp AT_SIGN  &kp HASH        &kp AMPERSAND    &kp SLASH      &kp UNDER    &none          &kp HOME    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END      &kp GRAVE
 &trans  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH  &none        &kp RIGHT_ALT  &kp DOLLAR  &kp LESS_THAN     &kp GREATER_THAN   &none        &none
                                      &trans           &kp N5         &tog 1       &trans         &trans      &trans
