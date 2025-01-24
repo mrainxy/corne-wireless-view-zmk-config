@@ -174,7 +174,7 @@
             display-name = "Raise";
             bindings = <
 &bt BT_CLR  &qq1              &qq2              &qq3              &bqax             &szq             &none          &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &trans
-&bt BT_NXT  &bq               &bqsj             &bqdw             &bqzw             &bqyd            &none          &none         &kp LS(ENTER)    &kp LC(ENTER)  &m1            &none
+&bt BT_NXT  &bq               &bqsj             &bqdw             &bqzw             &bqyd            &none          &none         &kp LS(ENTER)    &kp LC(ENTER)  &m1            &kp RC(RA(LS(DEL)))
 &sys_reset  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(EQUAL)    &kp RIGHT_ALT  &none         &kp C_VOLUME_UP  &kp C_VOL_DN   &kp RG(SPACE)  &kp RG(I)
                                                 &xh               &jt               &sx              &none          &none         &none
             >;
