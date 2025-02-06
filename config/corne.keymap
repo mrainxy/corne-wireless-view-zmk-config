@@ -114,6 +114,27 @@
             bindings = <&kp N1 &kp N7 &kp N8 &kp N5 &kp N8 &kp N5 &kp N8 &kp N3 &kp N9 &kp N8 &kp N0>;
             label = "PH";
         };
+
+        dw: dw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp D &kp W>;
+            label = "DW";
+        };
+
+        dui: dui {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp D &kp U &kp I>;
+            label = "DUI";
+        };
+
+        cuo: cuo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp C &kp U &kp O>;
+            label = "CUO";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -149,7 +170,7 @@
 &none               &kp LC(NUMBER_0)  &kp LC(UP_ARROW)      &kp LC(DOWN)      &kp LC(LA(DEL))   &kp LG(E)        &none          &kp N1     &kp N2     &kp N3      &kp N4  &kp BSPC
 &kp LC(LEFT_SHIFT)  &kp KP_PLUS       &kp KP_MINUS          &kp KP_MULTIPLY   &kp KP_SLASH      &kp KP_EQUAL     &kp DOLLAR     &kp N5     &kp N6     &kp N7      &kp N8  &kp PERCENT
 &kp LC(F8)          &kp LC(NUMBER_1)  &kp LC(LA(NUMBER_1))  &kp LC(NUMBER_2)  &kp LA(NUMBER_2)  &kp LC(LA(X))    &kp RIGHT_ALT  &kp N9     &kp COMMA  &kp PERIOD  &kp N0  &none
-                                                            &none             &none             &trans           &trans         &kp RCTRL  &kp ENTER
+                                                            &none             &none             &none            &trans         &kp RCTRL  &kp ENTER
             >;
         };
 
@@ -164,10 +185,10 @@
 
         S_4 {
             bindings = <
-&none  &kp TILDE    &kp CARET       &kp GRAVE        &kp PERCENT    &none            &none          &none     &kp PAGE_UP       &kp PAGE_DOWN      &none      &none
-&none  &kp AT_SIGN  &kp HASH        &kp SLASH        &kp AMPERSAND  &kp UNDER        &none          &kp HOME  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END    &none
-&none  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH  &none            &kp RIGHT_ALT  &kp LEFT  &kp UP            &kp DOWN           &kp RIGHT  &none
-                                    &none            &kp N5         &kp LC(LA(S))    &none          &none     &none
+&none  &kp TILDE    &kp CARET       &kp GRAVE        &kp PERCENT    &none        &none          &none     &kp PAGE_UP       &kp PAGE_DOWN      &none      &none
+&none  &kp AT_SIGN  &kp HASH        &kp SLASH        &kp AMPERSAND  &kp UNDER    &none          &kp HOME  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END    &none
+&none  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH  &none        &kp RIGHT_ALT  &kp LEFT  &kp UP            &kp DOWN           &kp RIGHT  &none
+                                    &none            &kp N5         &none        &none          &none     &none
             >;
         };
 
@@ -180,7 +201,7 @@
 
             display-name = "Raise";
             bindings = <
-&bt BT_CLR  &none             &none             &none             &bqax             &szq             &none          &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &none
+&bt BT_CLR  &dw               &dui              &cuo              &bqax             &szq             &none          &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &none
 &bt BT_NXT  &bq               &bqsj             &bqdw             &bqzw             &bqyd            &none          &kp RC(K)      &kp LS(ENTER)    &kp LC(ENTER)  &m1            &none
 &sys_reset  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)  &kp LC(NUMBER_6)  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RA(GRAVE)  &kp C_VOLUME_UP  &kp C_VOL_DN   &kp RG(SPACE)  &kp RG(I)
                                                 &xh               &jt               &sx              &none          &none          &none
