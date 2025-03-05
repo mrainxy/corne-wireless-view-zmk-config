@@ -139,56 +139,56 @@
         yss: yss {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp S &kp S>;
+            bindings = <&kp SLASH &kp Y &kp S &kp S &kp ENTER>;
             label = "YSS";
         };
 
         qq: qq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Q &kp Q>;
+            bindings = <&kp SLASH &kp Q &kp Q &kp ENTER>;
             label = "QQ";
         };
 
         zj: zj {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Z &kp J>;
+            bindings = <&kp SLASH &kp Z &kp J &kp ENTER>;
             label = "ZJ";
         };
 
         yx: yx {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp X>;
+            bindings = <&kp SLASH &kp Y &kp X &kp ENTER>;
             label = "YX";
         };
 
         ym: ym {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp M>;
+            bindings = <&kp SLASH &kp Y &kp M &kp ENTER>;
             label = "YM";
         };
 
         yjk: yjk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp J &kp K>;
+            bindings = <&kp SLASH &kp Y &kp J &kp K &kp ENTER>;
             label = "YJK";
         };
 
         mouse: mouse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp M &kp O &kp U &kp S &kp E>;
+            bindings = <&kp SLASH &kp M &kp O &kp U &kp S &kp E &kp ENTER>;
             label = "MOUSE";
         };
 
         mb: mb {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp M &kp B>;
+            bindings = <&kp SLASH &kp M &kp B &kp ENTER>;
             label = "MB";
         };
     };
