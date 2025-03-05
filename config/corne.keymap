@@ -139,62 +139,56 @@
         yss: yss {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp S &kp S &kp ENTER>;
+            bindings = <&kp SLASH &kp Y &kp S &kp S &kp SPACE>;
             label = "YSS";
         };
 
         qq: qq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp SLASH &kp Q &kp Q &kp ENTER>,
-                <&macro_wait_time 300>;
-
+            bindings = <&kp SLASH &kp Q &kp Q &kp SPACE>;
             label = "QQ";
         };
 
         zj: zj {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Z &kp J &kp ENTER>;
+            bindings = <&kp SLASH &kp Z &kp J &kp SPACE>;
             label = "ZJ";
         };
 
         yx: yx {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp X &kp ENTER>;
+            bindings = <&kp SLASH &kp Y &kp X &kp SPACE>;
             label = "YX";
         };
 
         ym: ym {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp M &kp ENTER>;
+            bindings = <&kp SLASH &kp Y &kp M &kp SPACE>;
             label = "YM";
         };
 
         yjk: yjk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp J &kp K &kp ENTER>;
+            bindings = <&kp SLASH &kp Y &kp J &kp K &kp SPACE>;
             label = "YJK";
         };
 
         mouse: mouse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp SLASH &kp M &kp O &kp U &kp S &kp E &kp ENTER>,
-                <&macro_wait_time 300>;
-
+            bindings = <&kp SLASH &kp M &kp O &kp U &kp S &kp E &kp SPACE>;
             label = "MOUSE";
         };
 
         mb: mb {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp M &kp B &kp ENTER>;
+            bindings = <&kp SLASH &kp M &kp B &kp SPACE>;
             label = "MB";
         };
     };
