@@ -191,6 +191,41 @@
             bindings = <&kp SLASH &kp M &kp B &kp SPACE>;
             label = "MB";
         };
+
+        wf: wf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp W &kp F &kp SPACE>;
+            label = "WF";
+        };
+
+        zq: zq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Z &kp Q &kp SPACE>;
+            label = "ZQ";
+        };
+
+        fs: fs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp F &kp S &kp SPACE>;
+            label = "FS";
+        };
+
+        as: as {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp A &kp S &kp SPACE>;
+            label = "AS";
+        };
+
+        of: of {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp O &kp F &kp SPACE>;
+            label = "OF";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -232,10 +267,10 @@
 
         F_2 {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none              &yx            &ym    &yjk   &mouse  &none  &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none          &qq1   &qq2   &qq3    &ph    &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &mb                &kp RIGHT_ALT  &none  &none  &none   &none  &none
-                        &yss     &qq      &zj                &none          &none  &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &kp PSCRN    &yx            &ym    &yjk   &mouse  &wf    &none
+&fs    &kp F5  &kp F6   &kp F7   &kp F8   &zq          &as            &qq1   &qq2   &qq3    &ph    &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &mb          &kp RIGHT_ALT  &of    &none  &none   &none  &none
+                        &yss     &qq      &zj          &none          &none  &none
             >;
         };
 
