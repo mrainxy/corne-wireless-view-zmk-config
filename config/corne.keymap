@@ -177,6 +177,20 @@
             bindings = <&kp SLASH &kp M &kp O &kp U &kp S &kp E>;
             label = "MOUSE";
         };
+
+        zj: zj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Z &kp J>;
+            label = "ZJ";
+        };
+
+        qq: qq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Q &kp Q>;
+            label = "QQ";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -218,10 +232,10 @@
 
         F_2 {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none              &none          &yx    &ym     &yjk   &yss   &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &none              &none          &yx    &ym     &yjk   &none  &none
 &none  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none          &qq1   &qq2    &qq3   &ph    &none
 &none  &kp F9  &kp F10  &kp F11  &kp F12  &none              &kp RIGHT_ALT  &mb    &mouse  &none  &none  &none
-                        &trans   &none    &none              &none          &none  &none
+                        &yss     &qq      &zj                &none          &none  &none
             >;
         };
 
