@@ -45,10 +45,10 @@
             label = "BQ1";
         };
 
-        bqsj: bq2 {
+        sj: bq2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp SLASH &kp B &kp Q &kp S &kp J>;
+            bindings = <&kp SLASH &kp SLASH &kp S &kp J>;
             label = "BQ2";
         };
 
@@ -59,38 +59,38 @@
             label = "BQ3";
         };
 
-        bqzw: bq4 {
+        zw: bq4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp SLASH &kp B &kp Q &kp Z &kp W>;
+            bindings = <&kp SLASH &kp SLASH &kp Z &kp W>;
             label = "BQ4";
         };
 
-        bqyd: bq5 {
+        yd: bq5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp SLASH &kp B &kp Q &kp Y &kp D>;
+            bindings = <&kp SLASH &kp SLASH &kp Y &kp D>;
             label = "BQ5";
         };
 
-        bqax: bq6 {
+        ax: bq6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp SLASH &kp B &kp Q &kp A &kp X>;
+            bindings = <&kp SLASH &kp SLASH &kp A &kp X>;
             label = "BQ6";
         };
 
-        szq: bq7 {
+        ys: bq7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp SLASH &kp S &kp Z &kp Q>;
+            bindings = <&kp SLASH &kp SLASH &kp Y &kp S>;
             label = "BQ7";
         };
 
-        xh: bq8 {
+        ts: bq8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp SLASH &kp X &kp H>;
+            bindings = <&kp SLASH &kp SLASH &kp T &kp S>;
             label = "BQ8";
         };
 
@@ -201,10 +201,10 @@
 
             display-name = "Raise";
             bindings = <
-&bt BT_CLR  &dw               &dui              &cuo              &bqax             &szq             &none          &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &none
-&bt BT_NXT  &bq               &bqsj             &bqdw             &bqzw             &bqyd            &none          &kp RC(K)      &kp LS(ENTER)    &kp LC(ENTER)  &m1            &none
+&bt BT_CLR  &dw               &dui              &cuo              &ax               &ys              &none          &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &none
+&bt BT_NXT  &bq               &sj               &bqdw             &zw               &yd              &none          &kp RC(K)      &kp LS(ENTER)    &kp LC(ENTER)  &m1            &none
 &sys_reset  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)  &kp LC(NUMBER_6)  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RA(GRAVE)  &kp C_VOLUME_UP  &kp C_VOL_DN   &kp RG(SPACE)  &kp RG(I)
-                                                &xh               &jt               &sx              &none          &none          &none
+                                                &ts               &jt               &sx              &none          &none          &none
             >;
         };
     };
