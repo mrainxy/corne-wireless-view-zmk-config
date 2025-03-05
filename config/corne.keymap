@@ -41,70 +41,70 @@
         bq: bq1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp B &kp Q>;
+            bindings = <&kp SLASH &kp SLASH &kp B &kp Q>;
             label = "BQ1";
         };
 
         bqsj: bq2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp B &kp Q &kp S &kp J>;
+            bindings = <&kp SLASH &kp SLASH &kp B &kp Q &kp S &kp J>;
             label = "BQ2";
         };
 
         bqdw: bq3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp B &kp Q &kp D &kp W>;
+            bindings = <&kp SLASH &kp SLASH &kp B &kp Q &kp D &kp W>;
             label = "BQ3";
         };
 
         bqzw: bq4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp B &kp Q &kp Z &kp W>;
+            bindings = <&kp SLASH &kp SLASH &kp B &kp Q &kp Z &kp W>;
             label = "BQ4";
         };
 
         bqyd: bq5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp B &kp Q &kp Y &kp D>;
+            bindings = <&kp SLASH &kp SLASH &kp B &kp Q &kp Y &kp D>;
             label = "BQ5";
         };
 
         bqax: bq6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp B &kp Q &kp A &kp X>;
+            bindings = <&kp SLASH &kp SLASH &kp B &kp Q &kp A &kp X>;
             label = "BQ6";
         };
 
         szq: bq7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp S &kp Z &kp Q>;
+            bindings = <&kp SLASH &kp SLASH &kp S &kp Z &kp Q>;
             label = "BQ7";
         };
 
         xh: bq8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp X &kp H>;
+            bindings = <&kp SLASH &kp SLASH &kp X &kp H>;
             label = "BQ8";
         };
 
         jt: bq9 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp J &kp T>;
+            bindings = <&kp SLASH &kp SLASH &kp J &kp T>;
             label = "BQ9";
         };
 
         sx: bq10 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp S &kp X>;
+            bindings = <&kp SLASH &kp SLASH &kp S &kp X>;
             label = "BQ10";
         };
 
@@ -118,21 +118,21 @@
         dw: dw {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp D &kp W>;
+            bindings = <&kp SLASH &kp SLASH &kp D &kp W>;
             label = "DW";
         };
 
         dui: dui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp FSLH &kp D &kp U &kp I>;
+            bindings = <&kp FSLH &kp SLASH &kp D &kp U &kp I>;
             label = "DUI";
         };
 
         cuo: cuo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp FSLH &kp C &kp U &kp O>;
+            bindings = <&kp FSLH &kp SLASH &kp C &kp U &kp O>;
             label = "CUO";
         };
     };
