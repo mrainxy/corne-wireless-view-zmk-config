@@ -135,62 +135,6 @@
             bindings = <&kp FSLH &kp SLASH &kp C &kp U &kp O>;
             label = "CUO";
         };
-
-        yx: ma {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp X>;
-            label = "MA";
-        };
-
-        ym: ym {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp M>;
-            label = "YM";
-        };
-
-        yjk: yjk {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp J &kp K>;
-            label = "YJK";
-        };
-
-        yss: ys {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp S &kp S>;
-            label = "YS";
-        };
-
-        mb: mb {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp M &kp B>;
-            label = "MB";
-        };
-
-        mouse: mouse {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp M &kp O &kp U &kp S &kp E>;
-            label = "MOUSE";
-        };
-
-        zj: zj {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Z &kp J>;
-            label = "ZJ";
-        };
-
-        qq: qq {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Q &kp Q>;
-            label = "QQ";
-        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -232,10 +176,10 @@
 
         F_2 {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none              &yx            &ym     &yjk   &none  &none  &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none          &qq1    &qq2   &qq3   &ph    &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &mb                &kp RIGHT_ALT  &mouse  &none  &none  &none  &none
-                        &yss     &qq      &zj                &none          &none   &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &none              &none          &none  &none  &none  &none  &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none          &qq1   &qq2   &qq3   &ph    &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &none              &kp RIGHT_ALT  &none  &none  &none  &none  &none
+                        &none    &none    &none              &none          &none  &none
             >;
         };
 
