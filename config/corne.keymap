@@ -146,7 +146,10 @@
         qq: qq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Q &kp Q &kp ENTER>;
+            bindings =
+                <&kp SLASH &kp Q &kp Q &kp ENTER>,
+                <&macro_wait_time 300>;
+
             label = "QQ";
         };
 
@@ -181,7 +184,10 @@
         mouse: mouse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp M &kp O &kp U &kp S &kp E &kp ENTER>;
+            bindings =
+                <&kp SLASH &kp M &kp O &kp U &kp S &kp E &kp ENTER>,
+                <&macro_wait_time 300>;
+
             label = "MOUSE";
         };
 
