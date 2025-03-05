@@ -135,6 +135,48 @@
             bindings = <&kp FSLH &kp SLASH &kp C &kp U &kp O>;
             label = "CUO";
         };
+
+        yx: ma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Y &kp X>;
+            label = "MA";
+        };
+
+        ym: ym {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Y &kp M>;
+            label = "YM";
+        };
+
+        yjk: yjk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Y &kp J &kp K>;
+            label = "YJK";
+        };
+
+        yss: ys {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Y &kp S &kp S>;
+            label = "YS";
+        };
+
+        mb: mb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp M &kp B>;
+            label = "MB";
+        };
+
+        mouse: mouse {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp M &kp O &kp U &kp S &kp E>;
+            label = "MOUSE";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -176,9 +218,9 @@
 
         F_2 {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none              &none          &none  &none  &none  &none  &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none          &qq1   &qq2   &qq3   &ph    &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &none              &kp RIGHT_ALT  &none  &none  &none  &none  &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &none              &none          &yx    &ym     &yjk   &yss   &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none          &qq1   &qq2    &qq3   &ph    &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &none              &kp RIGHT_ALT  &mb    &mouse  &none  &none  &none
                         &trans   &none    &none              &none          &none  &none
             >;
         };
@@ -201,7 +243,7 @@
 
             display-name = "Raise";
             bindings = <
-&bt BT_CLR  &dw               &dui              &cuo              &ax               &ys              &none          &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &none
+&bt BT_CLR  &dw               &dui              &cuo              &ax               &ys5             &none          &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &none
 &bt BT_NXT  &bq               &sj               &bqdw             &zw               &yd              &none          &kp RC(K)      &kp LS(ENTER)    &kp LC(ENTER)  &m1            &none
 &sys_reset  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)  &kp LC(NUMBER_6)  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RA(GRAVE)  &kp C_VOLUME_UP  &kp C_VOL_DN   &kp RG(SPACE)  &kp RG(I)
                                                 &ts               &jt               &sx              &none          &none          &none
