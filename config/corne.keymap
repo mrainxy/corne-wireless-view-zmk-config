@@ -232,10 +232,10 @@
 
         F_2 {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none              &yx            &ym    &yjk   &mouse  &none  &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none          &qq1   &qq2   &qq3    &ph    &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &mb                &kp RIGHT_ALT  &none  &none  &none   &none  &none
-                        &yss     &qq      &zj                &none          &none  &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &none              &yx            &ym     &yjk   &none  &none  &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none          &qq1    &qq2   &qq3   &ph    &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &mb                &kp RIGHT_ALT  &mouse  &none  &none  &none  &none
+                        &yss     &qq      &zj                &none          &none   &none
             >;
         };
 
