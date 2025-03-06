@@ -233,6 +233,20 @@
             bindings = <&kp SLASH &kp S &kp F &kp SPACE>;
             label = "SF";
         };
+
+        wo: wo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp W &kp O &kp SPACE>;
+            label = "WO";
+        };
+
+        ex: ex {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp E &kp X &kp SPACE>;
+            label = "EX";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -283,8 +297,8 @@
 
         S_4 {
             bindings = <
-&none  &kp TILDE    &kp CARET       &kp GRAVE        &kp PERCENT    &none        &none              &kp RC(HOME)  &kp PAGE_UP       &kp PAGE_DOWN      &kp RC(END)  &none
-&none  &kp AT_SIGN  &kp HASH        &kp SLASH        &kp AMPERSAND  &none        &kp RA(BACKSLASH)  &kp HOME      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END      &of
+&none  &kp TILDE    &kp CARET       &kp GRAVE        &kp PERCENT    &wo          &none              &kp RC(HOME)  &kp PAGE_UP       &kp PAGE_DOWN      &kp RC(END)  &none
+&none  &kp AT_SIGN  &kp HASH        &kp SLASH        &kp AMPERSAND  &ex          &kp RA(BACKSLASH)  &kp HOME      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END      &of
 &none  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH  &kp UNDER    &kp RIGHT_ALT      &kp LEFT      &kp UP            &kp DOWN           &kp RIGHT    &none
                                     &yss             &qq            &zj          &none              &none         &none
             >;
