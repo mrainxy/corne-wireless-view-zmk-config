@@ -247,6 +247,13 @@
             bindings = <&kp SLASH &kp E &kp X &kp SPACE>;
             label = "EX";
         };
+
+        po: po {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp P &kp O &kp SPACE>;
+            label = "PO";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -290,7 +297,7 @@
             bindings = <
 &none  &kp F1  &kp F2   &kp F3     &kp F4   &kp PSCRN    &none          &qq1   &qq2   &qq3    &ph    &none
 &none  &kp F5  &kp F6   &kp F7     &kp F8   &fs          &yx            &ym    &yjk   &mouse  &wf    &none
-&none  &kp F9  &kp F10  &kp F11    &kp F12  &mb          &kp RIGHT_ALT  &none  &none  &none   &none  &none
+&none  &kp F9  &kp F10  &kp F11    &kp F12  &mb          &kp RIGHT_ALT  &none  &po    &of     &none  &none
                         &kp LCTRL  &sf      &as          &none          &none  &none
             >;
         };
@@ -313,10 +320,10 @@
 
             display-name = "Raise";
             bindings = <
-&bt BT_CLR  &dw               &dui              &cuo              &ax               &ys              &none          &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &none
-&bt BT_NXT  &bq               &sj               &bqdw             &zw               &yd              &none          &kp RC(K)      &kp LS(ENTER)    &kp LC(ENTER)  &m1            &none
-&sys_reset  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)  &kp LC(NUMBER_6)  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RA(GRAVE)  &kp C_VOLUME_UP  &kp C_VOL_DN   &kp RG(SPACE)  &kp RG(I)
-                                                &ts               &jt               &sx              &none          &none          &none
+&none  &dw               &dui              &cuo              &ax               &ys              &none          &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &none
+&none  &bq               &sj               &bqdw             &zw               &yd              &none          &kp RC(K)      &kp LS(ENTER)    &kp LC(ENTER)  &m1            &none
+&none  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)  &kp LC(NUMBER_6)  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RA(GRAVE)  &kp C_VOLUME_UP  &kp C_VOL_DN   &kp RG(SPACE)  &kp RG(I)
+                                           &ts               &jt               &sx              &none          &none          &none
             >;
         };
     };
