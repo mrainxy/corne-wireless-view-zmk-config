@@ -254,6 +254,13 @@
             bindings = <&kp SLASH &kp P &kp O &kp SPACE>;
             label = "PO";
         };
+
+        AHK: AHK {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp A &kp H &kp SPACE>;
+            label = "AHK";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -286,7 +293,7 @@
 
             display-name = "Lower";
             bindings = <
-&none       &kp LC(NUMBER_0)  &kp LC(UP_ARROW)      &kp LC(DOWN)      &kp LC(LA(DEL))   &kp LG(E)        &none          &kp N1     &kp N2     &kp N3      &kp N4  &kp BSPC
+&none       &AHK              &kp LC(UP_ARROW)      &kp LC(DOWN)      &kp LC(LA(DEL))   &kp LG(E)        &none          &kp N1     &kp N2     &kp N3      &kp N4  &kp BSPC
 &kp CAPS    &kp KP_PLUS       &kp KP_MINUS          &kp KP_MULTIPLY   &kp KP_SLASH      &kp EQUAL        &kp DOLLAR     &kp N5     &kp N6     &kp N7      &kp N8  &kp PERCENT
 &kp LC(F8)  &kp LC(NUMBER_1)  &kp LC(LA(NUMBER_1))  &kp LC(NUMBER_2)  &kp LA(NUMBER_2)  &kp LC(LA(X))    &kp RIGHT_ALT  &kp N9     &kp COMMA  &kp PERIOD  &kp N0  &none
                                                     &none             &none             &none            &trans         &kp RCTRL  &kp ENTER
