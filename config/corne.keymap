@@ -90,7 +90,7 @@
         ts: bq8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp SLASH &kp T &kp S>;
+            bindings = <&kp SLASH &kp SLASH &kp B &kp Q &kp G &kp S>;
             label = "BQ8";
         };
 
