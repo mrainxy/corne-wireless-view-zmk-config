@@ -311,10 +311,10 @@
 
         S_4 {
             bindings = <
-&none  &kp TILDE    &kp CARET       &kp GRAVE        &kp PERCENT    &wo          &none              &kp RC(HOME)  &kp PAGE_UP       &kp PAGE_DOWN      &kp RC(END)  &none
-&none  &kp AT_SIGN  &kp HASH        &kp SLASH        &kp AMPERSAND  &ex          &kp RA(BACKSLASH)  &kp HOME      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END      &none
-&none  &kp PIPE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH  &kp UNDER    &kp RIGHT_ALT      &kp LEFT      &kp UP            &kp DOWN           &kp RIGHT    &none
-                                    &yss             &qq            &zj          &none              &none         &none
+&kp TILDE  &kp GRAVE        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &wo      &none              &kp RC(HOME)  &kp PAGE_UP       &kp PAGE_DOWN      &kp RC(END)  &none
+&kp AT     &kp EXCLAMATION  &kp HASH              &kp SLASH              &kp AMPERSAND  &ex      &kp RA(BACKSLASH)  &kp HOME      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END      &kp PERCENT
+&kp UNDER  &kp PIPE         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &none    &kp RIGHT_ALT      &kp LEFT      &kp UP            &kp DOWN           &kp RIGHT    &none
+                                                  &yss                   &qq            &zj      &none              &none         &none
             >;
         };
 
