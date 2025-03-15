@@ -129,116 +129,11 @@
             label = "DW";
         };
 
-        sx: sx {
+        ah: ah {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp SLASH &kp S &kp X>;
-            label = "SX";
-        };
-
-        yss: yss {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp S &kp S &kp SPACE>;
-            label = "YSS";
-        };
-
-        qq: qq {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Q &kp Q &kp SPACE>;
-            label = "QQ";
-        };
-
-        zj: zj {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Z &kp J &kp SPACE>;
-            label = "ZJ";
-        };
-
-        yx: yx {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp X &kp SPACE>;
-            label = "YX";
-        };
-
-        ym: ym {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp M &kp SPACE>;
-            label = "YM";
-        };
-
-        yjk: yjk {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp J &kp K &kp SPACE>;
-            label = "YJK";
-        };
-
-        mouse: mouse {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp M &kp O &kp U &kp S &kp E &kp SPACE>;
-            label = "MOUSE";
-        };
-
-        mb: mb {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp M &kp B &kp SPACE>;
-            label = "MB";
-        };
-
-        wf: wf {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp W &kp F &kp SPACE>;
-            label = "WF";
-        };
-
-        zq: zq {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Z &kp Q &kp SPACE>;
-            label = "ZQ";
-        };
-
-        fs: fs {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp F &kp S &kp SPACE>;
-            label = "FS";
-        };
-
-        as: as {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp A &kp S &kp SPACE>;
-            label = "AS";
-        };
-
-        of: of {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp O &kp F &kp SPACE>;
-            label = "OF";
-        };
-
-        sf: sf {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp S &kp F &kp SPACE>;
-            label = "SF";
-        };
-
-        wo: wo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH &kp W &kp O &kp SPACE>;
-            label = "WO";
+            bindings = <&kp SLASH &kp A &kp H &kp SPACE>;
+            label = "AH";
         };
 
         ex: ex {
@@ -248,6 +143,34 @@
             label = "EX";
         };
 
+        fm: fm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp F &kp M &kp SPACE>;
+            label = "FM";
+        };
+
+        mb: mb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp M &kp B &kp SPACE>;
+            label = "MB";
+        };
+
+        mouse: mo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp M &kp O &kp SPACE>;
+            label = "MO";
+        };
+
+        of: of {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp O &kp F &kp SPACE>;
+            label = "OF";
+        };
+
         po: po {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -255,11 +178,81 @@
             label = "PO";
         };
 
-        AHK: AHK {
+        qq: qq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp A &kp H &kp SPACE>;
-            label = "AHK";
+            bindings = <&kp SLASH &kp Q &kp Q &kp SPACE>;
+            label = "QQ";
+        };
+
+        wo: wo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp W &kp O &kp SPACE>;
+            label = "WO";
+        };
+
+        xm: xm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp X &kp M &kp SPACE>;
+            label = "XM";
+        };
+
+        yjk: yjk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Y &kp J &kp K &kp SPACE>;
+            label = "YJK";
+        };
+
+        ym: ym {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Y &kp M &kp SPACE>;
+            label = "YM";
+        };
+
+        yss: ys {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Y &kp S &kp SPACE>;
+            label = "YS";
+        };
+
+        yx: yx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Y &kp X &kp SPACE>;
+            label = "YX";
+        };
+
+        zj: zj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Z &kp J &kp SPACE>;
+            label = "ZJ";
+        };
+
+        sf: sf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp S &kp F &kp SPACE>;
+            label = "SF";
+        };
+
+        as: as {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp A &kp S &kp SPACE>;
+            label = "AS";
+        };
+
+        sx: sx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp SLASH &kp S &kp X>;
+            label = "SX";
         };
     };
 
@@ -284,7 +277,7 @@
             >;
         };
 
-        n_1 {
+        L_1 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -293,23 +286,23 @@
 
             display-name = "Lower";
             bindings = <
-&none             &AHK              &kp LC(UP_ARROW)      &kp LC(DOWN)      &kp LC(LA(DEL))  &kp LG(E)        &none          &kp N1     &kp N2     &kp N3      &kp N4  &kp BSPC
+&none             &ah               &kp LC(UP_ARROW)      &kp LC(DOWN)      &kp LC(LA(DEL))  &kp LG(E)        &none          &kp N1     &kp N2     &kp N3      &kp N4  &kp BSPC
 &kp LA(NUMBER_2)  &kp KP_PLUS       &kp KP_MINUS          &kp KP_MULTIPLY   &kp KP_SLASH     &kp EQUAL        &kp DOLLAR     &kp N5     &kp N6     &kp N7      &kp N8  &kp PERCENT
 &kp LC(F8)        &kp LC(NUMBER_1)  &kp LC(LA(NUMBER_1))  &kp LC(NUMBER_2)  &kp CAPS         &kp LC(LA(X))    &kp RIGHT_ALT  &kp N9     &kp COMMA  &kp PERIOD  &kp N0  &none
                                                           &kp LSHIFT        &none            &none            &trans         &kp RCTRL  &kp ENTER
             >;
         };
 
-        F_2 {
+        L_2 {
             bindings = <
 &none  &kp F1  &kp F2   &kp F3     &kp F4   &kp PSCRN    &none          &qq1   &qq2   &qq3    &ph    &none
-&none  &kp F5  &kp F6   &kp F7     &kp F8   &fs          &yx            &ym    &yjk   &mouse  &wf    &none
+&none  &kp F5  &kp F6   &kp F7     &kp F8   &xm          &yx            &ym    &yjk   &mouse  &fm    &none
 &none  &kp F9  &kp F10  &kp F11    &kp F12  &mb          &kp RIGHT_ALT  &none  &po    &of     &none  &none
                         &kp LCTRL  &sf      &as          &none          &none  &none
             >;
         };
 
-        S_4 {
+        L_3 {
             bindings = <
 &kp TILDE  &kp COLON        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &kp GRAVE    &none              &kp RC(HOME)  &kp PAGE_UP       &kp PAGE_DOWN      &kp RC(END)  &none
 &kp AT     &kp EXCLAMATION  &kp HASH              &kp SLASH              &kp AMPERSAND  &wo          &kp RA(BACKSLASH)  &kp HOME      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END      &kp PERCENT
@@ -318,7 +311,7 @@
             >;
         };
 
-        M_3 {
+        L_4 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -327,7 +320,7 @@
 
             display-name = "Raise";
             bindings = <
-&none  &dw               &dui              &cuo              &ax               &ys              &none          &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &none
+&none  &dw               &dui              &cuo              &ax               &yss             &none          &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &none
 &none  &bq               &bqsj             &bqdw             &zw               &yd              &none          &kp RC(K)      &kp LS(ENTER)    &kp LC(ENTER)  &m1            &none
 &none  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)  &kp LC(NUMBER_6)  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RA(GRAVE)  &kp C_VOLUME_UP  &kp C_VOL_DN   &kp RG(SPACE)  &kp RG(I)
                                            &gs               &jt               &sx              &none          &none          &none
