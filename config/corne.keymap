@@ -213,10 +213,10 @@
             label = "YM";
         };
 
-        yss: ys {
+        xs: ys {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp S &kp SPACE>;
+            bindings = <&kp SLASH &kp X &kp S &kp SPACE>;
             label = "YS";
         };
 
@@ -307,7 +307,7 @@
 &kp TILDE  &kp COLON        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &kp GRAVE    &none              &kp RC(HOME)  &kp PAGE_UP       &kp PAGE_DOWN      &kp RC(END)  &none
 &kp AT     &kp EXCLAMATION  &kp HASH              &kp SLASH              &kp AMPERSAND  &wo          &kp RA(BACKSLASH)  &kp HOME      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END      &kp PERCENT
 &kp UNDER  &kp PIPE         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &ex          &kp RIGHT_ALT      &kp LEFT      &kp UP            &kp DOWN           &kp RIGHT    &none
-                                                  &yss                   &qq            &zj          &none              &none         &none
+                                                  &xs                    &qq            &zj          &none              &none         &none
             >;
         };
 
