@@ -320,7 +320,7 @@
 
             display-name = "Raise";
             bindings = <
-&none  &dw               &dui              &cuo              &ax               &yss             &none          &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &none
+&none  &dw               &dui              &cuo              &ax               &ys              &none          &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &none
 &none  &bq               &bqsj             &bqdw             &zw               &yd              &none          &kp RC(K)      &kp LS(ENTER)    &kp LC(ENTER)  &m1            &none
 &none  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)  &kp LC(NUMBER_6)  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RA(GRAVE)  &kp C_VOLUME_UP  &kp C_VOL_DN   &kp RG(SPACE)  &kp RG(I)
                                            &gs               &jt               &sx              &none          &none          &none
