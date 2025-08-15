@@ -5,67 +5,338 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
-        keymap {
-                compatible = "zmk,keymap";
-
-                default_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-                        display-name = "Base";
-                        bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
-                        >;
-                };
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        display-name = "Lower";
-                        bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
-                        >;
-                };
-
-                raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        display-name = "Raise";
-                        bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
-                        >;
-                };
-
-                extra_1 {
-                        status = "reserved";
-                };
-
-                extra_2 {
-                        status = "reserved";
-                };
-
-                extra_3 {
-                        status = "reserved";
-                };
+    macros {
+        dw: dw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp SLASH &kp D &kp W>;
+            label = "DW";
         };
+
+        dui: dui {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp SLASH &kp D &kp U &kp I>;
+            label = "DUI";
+        };
+
+        cuo: cuo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp SLASH &kp C &kp U &kp O>;
+            label = "CUO";
+        };
+
+        qs: xs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp SLASH &kp Q &kp S>;
+            label = "XS";
+        };
+
+        bq: bq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp SLASH &kp B &kp Q>;
+            label = "BQ";
+        };
+
+        bqsj: bqsj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp SLASH &kp B &kp Q &kp S &kp J>;
+            label = "BQSJ";
+        };
+
+        bqdw: bqdw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp SLASH &kp B &kp Q &kp D &kp W>;
+            label = "BQDW";
+        };
+
+        zw: zw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp SLASH &kp Z &kp W>;
+            label = "ZW";
+        };
+
+        gs: gs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp SLASH &kp G &kp S>;
+            label = "GS";
+        };
+
+        jt: jt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp SLASH &kp J &kp T>;
+            label = "JT";
+        };
+
+        sx: sx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp SLASH &kp S &kp X>;
+            label = "SX";
+        };
+
+        ahk: ahk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp A &kp H &kp K &kp SPACE>;
+            label = "AHK";
+        };
+
+        as: as {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp A &kp S &kp SPACE>;
+            label = "AS";
+        };
+
+        bd: bd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp B &kp D &kp SPACE>;
+            label = "BD";
+        };
+
+        excel: excel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp E &kp X &kp SPACE>;
+            label = "EXCEL";
+        };
+
+        ma: ma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp M &kp A &kp SPACE>;
+            label = "MA";
+        };
+
+        of: mo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp O &kp F &kp SPACE>;
+            label = "MO";
+        };
+
+        po: po {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp P &kp O &kp SPACE>;
+            label = "PO";
+        };
+
+        qq: qq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Q &kp Q &kp SPACE>;
+            label = "QQ";
+        };
+
+        te: te {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp T &kp E &kp SPACE>;
+            label = "TE";
+        };
+
+        vj: vj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp V &kp J &kp SPACE>;
+            label = "VJ";
+        };
+
+        fm: fm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp F &kp M &kp SPACE>;
+            label = "FM";
+        };
+
+        word: word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp W &kp O &kp SPACE>;
+            label = "WORD";
+        };
+
+        yjk: yjk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Y &kp J &kp K &kp SPACE>;
+            label = "YJK";
+        };
+
+        ym: ym {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Y &kp M &kp SPACE>;
+            label = "YM";
+        };
+
+        jw: jw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp J &kp W &kp SPACE>;
+            label = "JW";
+        };
+
+        m1: m1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N9 &kp N9 &kp N1>;
+            label = "M1";
+        };
+
+        q1: q1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N9 &kp N7 &kp N9 &kp N1 &kp N9 &kp N0 &kp N5 &kp N1 &kp N0>;
+            label = "Q1";
+        };
+
+        q2: q2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N3 &kp N1 &kp N5 &kp N6 &kp N6 &kp N0 &kp N7 &kp N6 &kp N0>;
+            label = "Q2";
+        };
+
+        q3: q3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N0 &kp N7 &kp N0 &kp N4 &kp N5 &kp N0 &kp N3 &kp N6>;
+            label = "Q3";
+        };
+
+        yd: yd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp FSLH &kp Y &kp D>;
+            label = "YD";
+        };
+
+        ph: ph {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N7 &kp N8 &kp N5 &kp N8 &kp N5 &kp N8 &kp N3 &kp N9 &kp N8 &kp N0>;
+            label = "PH";
+        };
+
+        yx: yx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Y &kp X &kp SPACE>;
+            label = "YX";
+        };
+
+        ax: ax {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp SLASH &kp A &kp X>;
+            label = "AX";
+        };
+
+        yss: yss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp Y &kp S &kp SPACE>;
+            label = "YSS";
+        };
+
+        xb: xb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp X &kp B &kp SPACE>;
+            label = "XB";
+        };
+
+        sf: js {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp S &kp F &kp SPACE>;
+            label = "JS";
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+
+            display-name = "Base";
+            bindings = <
+&kp ESC    &kp Q  &kp W  &kp E      &kp R   &kp T        &kp Y       &kp U        &kp I        &kp O    &kp P     &kp BSPC
+&kp N5     &kp A  &kp S  &kp D      &kp F   &kp G        &kp H       &kp J        &kp K        &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V   &kp B        &kp N       &kp M        &kp COMMA    &kp DOT  &kp FSLH  &kp RIGHT_WIN
+                         &kp LCTRL  &kp N4  &lt 1 DEL    &lt 2 CAPS  &lt 0 SPACE  &lt 0 ENTER
+            >;
+        };
+
+        lower_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            display-name = "Lower";
+            bindings = <
+&ahk        &kp LC(F6)   &kp LC(UP)      &kp LC(DOWN)     &kp LC(LA(DELETE))  &kp LG(E)        &none          &kp N1     &kp N2     &kp N3      &kp N4  &kp BSPC
+&kp LA(N2)  &kp KP_PLUS  &kp KP_MINUS    &kp KP_MULTIPLY  &kp KP_SLASH        &kp EQUAL        &kp DOLLAR     &kp N5     &kp N6     &kp N7      &kp N8  &kp PERCENT
+&kp LC(F8)  &kp LC(N1)   &kp LC(LA(N1))  &kp LC(N2)       &kp TAB             &kp LC(LA(X))    &kp RIGHT_ALT  &kp N9     &kp COMMA  &kp PERIOD  &kp N0  &none
+                                         &kp LEFT_SHIFT   &none               &none            &none          &kp RCTRL  &kp ENTER
+            >;
+        };
+
+        raise_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            display-name = "Raise";
+            bindings = <
+&none  &kp F1  &kp F2   &kp F3     &kp F4   &kp PSCRN    &none          &q1    &q2    &q3  &ph    &none
+&none  &kp F5  &kp F6   &kp F7     &kp F8   &vj          &yjk           &yx    &ym    &fm  &none  &none
+&none  &kp F9  &kp F10  &kp F11    &kp F12  &ma          &kp RIGHT_ALT  &xb    &of    &po  &none  &none
+                        &kp LCTRL  &sf      &as          &none          &none  &none
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&kp TILDE  &kp COLON        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &kp GRAVE    &none              &kp RC(HOME)  &kp PG_UP         &kp PG_DN          &kp RC(END)      &none
+&kp AT     &kp EXCLAMATION  &kp HASH              &kp SLASH              &kp AMPERSAND  &excel       &kp RA(BACKSLASH)  &kp HOME      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END          &kp PERCENT
+&kp UNDER  &kp PIPE         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &word        &kp RIGHT_ALT      &kp LEFT      &kp UP_ARROW      &kp DOWN_ARROW     &kp RIGHT_ARROW  &none
+                                                  &yss                   &qq            &jw          &none              &none         &none
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&none  &dw         &dui        &cuo        &ax         &qs              &bt BT_CLR     &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3   &none
+&none  &bq         &bqsj       &bqdw       &zw         &yd              &none          &kp RC(K)      &kp RS(ENTER)    &kp RC(ENTER)      &m1            &none
+&none  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)  &kp LC(N6)  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RA(GRAVE)  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp RG(SPACE)  &kp RG(I)
+                               &gs         &jt         &sx              &none          &none          &none
+            >;
+        };
+    };
 };
