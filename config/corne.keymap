@@ -285,7 +285,7 @@
 &kp ESC    &kp Q  &kp W  &kp E      &kp R   &kp T        &kp Y       &kp U        &kp I        &kp O    &kp P     &kp BSPC
 &kp N5     &kp A  &kp S  &kp D      &kp F   &kp G        &kp H       &kp J        &kp K        &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp V   &kp B        &kp N       &kp M        &kp COMMA    &kp DOT  &kp FSLH  &kp RIGHT_WIN
-                         &kp LCTRL  &kp N4  &lt 1 DEL    &lt 2 CAPS  &lt 0 SPACE  &lt 0 ENTER
+                         &kp LCTRL  &kp N4  &lt 1 DEL    &lt 2 CAPS  &lt 3 SPACE  &lt 4 ENTER
             >;
         };
 
@@ -334,7 +334,7 @@
             bindings = <
 &none  &dw         &dui        &cuo        &ax         &qs              &bt BT_CLR     &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3   &none
 &none  &bq         &bqsj       &bqdw       &zw         &yd              &none          &kp RC(K)      &kp RS(ENTER)    &kp RC(ENTER)      &m1            &none
-&none  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)  &kp LC(N6)  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RA(GRAVE)  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp RG(SPACE)  &kp RG(I)
+&none  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)  &kp LC(N6)  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RA(GRAVE)  &kp K_VOLUME_UP  &kp K_VOLUME_DOWN  &kp RG(SPACE)  &kp RG(I)
                                &gs         &jt         &sx              &none          &none          &none
             >;
         };
