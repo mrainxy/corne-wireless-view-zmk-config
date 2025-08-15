@@ -315,7 +315,7 @@
             display-name = "Raise";
             bindings = <
 &none  &kp F1  &kp F2   &kp F3     &kp F4   &kp PSCRN    &none          &q1    &q2    &q3  &ph    &none
-&none  &kp F5  &kp F6   &kp F7     &kp F8   &vj          &yjk           &yx    &ym    &fm  &none  &none
+&none  &kp F5  &kp F6   &kp F7     &kp F8   &vj          &yjk           &yx    &ym    &fm  &te    &none
 &none  &kp F9  &kp F10  &kp F11    &kp F12  &ma          &kp RIGHT_ALT  &xb    &of    &po  &none  &none
                         &kp LCTRL  &sf      &as          &none          &none  &none
             >;
