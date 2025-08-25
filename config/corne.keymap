@@ -272,7 +272,7 @@
         close: close {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_ALT &kp F4 &kp SPACE &kp ENTER>;
+            bindings = <&kp RIGHT_ALT &kp F4>;
             label = "CLOSE";
         };
     };
