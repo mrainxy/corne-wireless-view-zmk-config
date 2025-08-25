@@ -268,13 +268,6 @@
             bindings = <&kp SLASH &kp S &kp F &kp SPACE>;
             label = "JS";
         };
-
-        close: close {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT_ALT &kp F4>;
-            label = "CLOSE";
-        };
     };
 
     keymap {
@@ -340,7 +333,7 @@
         layer_4 {
             bindings = <
 &none  &dw         &dui        &cuo        &ax         &qs              &bt BT_CLR     &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3   &none
-&none  &bq         &bqsj       &bqdw       &zw         &yd              &none          &kp RC(K)      &kp RS(ENTER)    &kp RC(ENTER)      &m1            &close
+&none  &bq         &bqsj       &bqdw       &zw         &yd              &none          &kp RC(K)      &kp RS(ENTER)    &kp RC(ENTER)      &m1            &none
 &none  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)  &kp LC(N6)  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RA(GRAVE)  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp RG(SPACE)  &kp RG(I)
                                &gs         &jt         &sx              &none          &none          &none
             >;
