@@ -31,10 +31,10 @@
             label = "CUO";
         };
 
-        qs: xs {
+        ys: xs {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp SLASH &kp Q &kp S>;
+            bindings = <&kp SLASH &kp SLASH &kp Y &kp S>;
             label = "XS";
         };
 
@@ -248,10 +248,10 @@
             label = "AX";
         };
 
-        yss: yss {
+        xs: yss {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp Y &kp S &kp SPACE>;
+            bindings = <&kp SLASH &kp X &kp S &kp SPACE>;
             label = "YSS";
         };
 
@@ -269,11 +269,46 @@
             label = "JS";
         };
 
-        close: close {
+        ld: ld {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_ALT &kp F4>;
-            label = "CLOSE";
+            bindings = <&kp FSLH &kp FSLH &kp L &kp D>;
+            label = "LD";
+        };
+
+        ks: ks {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp FSLH &kp K &kp S>;
+            label = "KS";
+        };
+
+        ds: ds {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp FSLH &kp D &kp S>;
+            label = "DS";
+        };
+
+        lx: lx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp FSLH &kp L &kp X>;
+            label = "LX";
+        };
+
+        hzq: hzq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp FSLH &kp H &kp Z &kp Q>;
+            label = "HZQ";
+        };
+
+        ts: ts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp FSLH &kp T &kp S>;
+            label = "TS";
         };
     };
 
@@ -333,16 +368,16 @@
 &kp TILDE  &kp COLON        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &kp GRAVE    &none              &kp RC(HOME)  &kp PG_UP         &kp PG_DN          &kp RC(END)      &none
 &kp AT     &kp EXCLAMATION  &kp HASH              &kp SLASH              &kp AMPERSAND  &excel       &kp RA(BACKSLASH)  &kp HOME      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END          &kp PERCENT
 &kp UNDER  &kp PIPE         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &word        &kp RIGHT_ALT      &kp LEFT      &kp UP_ARROW      &kp DOWN_ARROW     &kp RIGHT_ARROW  &none
-                                                  &yss                   &qq            &jw          &none              &none         &none
+                                                  &xs                    &qq            &jw          &none              &none         &none
             >;
         };
 
         layer_4 {
             bindings = <
-&none  &dw         &dui        &cuo        &ax         &qs              &bt BT_CLR     &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3   &none
-&none  &bq         &bqsj       &bqdw       &zw         &yd              &none          &kp RC(K)      &kp RS(ENTER)    &kp RC(ENTER)      &m1            &close
-&none  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)  &kp LC(N6)  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RA(GRAVE)  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp RG(SPACE)  &kp RG(I)
-                               &gs         &jt         &sx              &none          &none          &none
+&none  &dw  &dui   &cuo   &ax   &ts              &bt BT_CLR     &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3  &sys_reset
+&ld    &bq  &bqsj  &bqdw  &zw   &yd              &kp RA(GRAVE)  &kp RC(K)         &kp RS(ENTER)    &kp RC(ENTER)      &m1           &none
+&lx    &ys  &ks    &ds    &hzq  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RC(NUMBER_6)  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &none         &kp RG(I)
+                   &gs    &jt   &sx              &none          &none             &none
             >;
         };
     };
