@@ -310,6 +310,20 @@
             bindings = <&kp FSLH &kp FSLH &kp T &kp S>;
             label = "TS";
         };
+
+        he: he {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp H &kp E>;
+            label = "HE";
+        };
+
+        lm: lm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp L &kp M>;
+            label = "LM";
+        };
     };
 
     keymap {
@@ -375,8 +389,8 @@
         layer_4 {
             bindings = <
 &none  &dw  &dui   &cuo   &ax   &ts              &bt BT_CLR     &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3  &sys_reset
-&ld    &bq  &bqsj  &bqdw  &zw   &yd              &kp RA(GRAVE)  &kp RC(K)         &kp RS(ENTER)    &kp RC(ENTER)      &m1           &none
-&lx    &ys  &ks    &ds    &hzq  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RC(NUMBER_6)  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &none         &kp RG(I)
+&ld    &bq  &bqsj  &bqdw  &zw   &yd              &kp RA(GRAVE)  &kp RC(K)         &kp RS(ENTER)    &kp RC(ENTER)      &m1           &he
+&lx    &ys  &ks    &ds    &hzq  &kp LC(EQUAL)    &kp RIGHT_ALT  &kp RC(NUMBER_6)  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &lm           &kp RG(I)
                    &gs    &jt   &sx              &none          &none             &none
             >;
         };
